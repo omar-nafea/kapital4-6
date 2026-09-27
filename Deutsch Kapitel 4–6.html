@@ -1,0 +1,1078 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Deutsch Kapitel 4–6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --surface:#FFFFFF; --soft:#E3E8EE; --ink:#18202A; --muted:#5A6472; --line:#D6DCE3;
+  --der:#2461B3; --das:#23875A; --die:#C23B34; --pl:#7D52AE;
+  --mark:#F4C430; --markSoft:rgba(244,196,48,.30); --on-yes:#FFFFFF;
+  --f-ar:"IBM Plex Sans Arabic","Noto Sans Arabic",Tahoma,sans-serif;
+  --f-disp:"Readex Pro","IBM Plex Sans Arabic",Tahoma,sans-serif;
+  --f-de:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#111519; --surface:#192029; --soft:#222A34; --ink:#E7EBF0; --muted:#9AA4B1; --line:#2B333E;
+    --der:#7AAEF0; --das:#5DC48C; --die:#F07C74; --pl:#B894E6;
+    --mark:#D9A91C; --markSoft:rgba(217,169,28,.24); --on-yes:#0B1A12;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#111519; --surface:#192029; --soft:#222A34; --ink:#E7EBF0; --muted:#9AA4B1; --line:#2B333E;
+  --der:#7AAEF0; --das:#5DC48C; --die:#F07C74; --pl:#B894E6;
+  --mark:#D9A91C; --markSoft:rgba(217,169,28,.24); --on-yes:#0B1A12;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ar);font-size:16px;line-height:1.75}
+.app{max-width:820px;margin:0 auto;padding-inline:16px;padding-block:0 72px}
+.de{font-family:var(--f-de);direction:ltr;unicode-bidi:isolate}
+h1,h2,h3,h4{font-family:var(--f-disp);text-wrap:balance;line-height:1.3}
+small{font-size:.8em}
+
+/* intro + sticky bar */
+.intro{padding-block:28px 14px}
+.intro h1{font-size:30px;margin:0 0 6px;font-weight:700}
+.intro h1 .de{font-weight:600}
+.intro p{margin:0;color:var(--muted);max-width:62ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font-size:14px}
+.legend .de{font-weight:600}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);margin-inline:-16px;padding:10px 16px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.tab{font-family:var(--f-disp);font-size:14px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.rc{display:flex;gap:8px;align-items:center}
+.switch{display:flex;align-items:center;gap:8px;font-family:var(--f-disp);font-size:14px;background:none;border:0;color:var(--ink);cursor:pointer;padding:4px}
+.track{width:40px;height:22px;border-radius:999px;background:var(--soft);border:1px solid var(--line);position:relative;transition:background .2s}
+.track::after{content:"";position:absolute;top:2px;right:2px;width:16px;height:16px;border-radius:50%;background:var(--muted);transition:transform .2s,background .2s}
+.switch[aria-checked="true"] .track{background:var(--mark);border-color:var(--mark)}
+.switch[aria-checked="true"] .track::after{transform:translateX(-18px);background:#2B2200}
+.mini{font-family:var(--f-disp);font-size:13px;padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+
+/* chapter */
+.chead{padding-top:26px}
+.kick{font-family:var(--f-de);letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--muted);margin:0}
+.chead h2{font-family:var(--f-de);font-size:34px;font-weight:600;margin:2px 0 4px}
+.chead .sub{margin:0;color:var(--muted)}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.jump a{font-size:13px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink);text-decoration:none;background:var(--surface)}
+.jump a:hover{border-color:var(--ink)}
+.part{display:flex;align-items:center;gap:12px;font-size:21px;margin:44px 0 6px;font-weight:600}
+.part::after{content:"";flex:1;height:1px;background:var(--line)}
+[id]{scroll-margin-top:120px}
+
+.rule{margin-top:22px;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.rule h3{font-size:20px;margin:0 0 8px;font-weight:600}
+.rule h3 .de{font-weight:600}
+.rule > p{margin:0 0 10px;max-width:66ch}
+.rule h4{font-size:15px;margin:18px 0 6px;color:var(--muted);font-weight:600}
+.lab{font-family:var(--f-disp);font-size:13px;color:var(--muted);margin:0 0 4px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:12px 0}
+.two > div{background:var(--soft);border-radius:10px;padding:12px 14px}
+.two ul{margin:0;padding-inline-start:18px}
+.tip{margin:14px 0 4px;background:var(--soft);border-radius:10px;padding:12px 14px}
+.tip b.k{display:inline-block;font-family:var(--f-disp);font-size:12px;background:var(--ink);color:var(--bg);padding:1px 8px;border-radius:6px;margin-inline-end:6px}
+.scroll{overflow-x:auto;margin:10px 0;direction:ltr}
+table.tbl{border-collapse:collapse;width:100%;font-family:var(--f-de);font-size:16px;font-variant-numeric:tabular-nums}
+.tbl th,.tbl td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;vertical-align:top}
+.tbl.plain td:last-child,.tbl.wrap td:last-child{white-space:normal;min-width:170px}
+.tbl th{font-weight:600;color:var(--muted);font-size:14px}
+.tbl td:first-child{color:var(--muted)}
+.tbl.plain td:first-child{color:var(--ink);font-weight:600}
+.tbl .ar{font-family:var(--f-ar);white-space:normal}
+.gm{color:var(--der)} .gn{color:var(--das)} .gf{color:var(--die)} .gp{color:var(--pl)}
+
+ul.ex{list-style:none;padding:0;margin:10px 0 0;display:grid}
+ul.ex li{padding-block:8px;border-top:1px dashed var(--line)}
+ul.ex li:first-child{border-top:0}
+ul.ex .de{display:block;font-size:18px;text-align:right}
+ul.ex .tr{display:block;color:var(--muted);font-size:14px}
+
+.frames{display:grid;gap:10px;margin:12px 0}
+.frame{display:flex;flex-wrap:wrap;gap:6px;direction:ltr;align-items:stretch}
+.slot{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:8px;padding:4px 10px 6px;font-family:var(--f-de);font-size:17px;background:var(--surface)}
+.slot small{font-family:var(--f-disp);font-size:10.5px;color:var(--muted);letter-spacing:.04em}
+.slot.v{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.slot.v small{color:var(--bg);opacity:.7}
+.slot.e{border:2px solid var(--ink)}
+.flab{font-size:13px;color:var(--muted);margin:0 0 3px}
+
+.vchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.vchip{border:1px solid var(--line);border-radius:8px;padding:3px 10px;background:var(--surface);font-size:14px}
+.vchip .de{font-size:16px;margin-inline-end:6px}
+
+/* vocab */
+.vgroup{margin-top:22px}
+.vgroup h4{font-size:15px;margin:0 0 4px;color:var(--muted);font-weight:600}
+ul.vlist{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:28px}
+li.w{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:6px;border-bottom:1px solid var(--line)}
+.gde{font-family:var(--f-de);font-size:17px;direction:ltr;unicode-bidi:isolate}
+.gde .art{font-weight:600}
+.gde .nt{color:var(--muted);font-size:13px}
+.mean{color:var(--muted);font-size:14.5px;text-align:left}
+.g-m .art,.g-m .noun{color:var(--der)}
+.g-n .art,.g-n .noun{color:var(--das)}
+.g-f .art,.g-f .noun{color:var(--die)}
+.g-p .art,.g-p .noun{color:var(--pl)}
+
+/* phrases */
+ul.plist{list-style:none;padding:0;margin:8px 0 0}
+ul.plist li{padding-block:8px;border-bottom:1px solid var(--line)}
+.p-ar{margin:0;font-size:15px;color:var(--muted)}
+.p-de{margin:0;font-family:var(--f-de);font-size:18px;direction:ltr;text-align:right}
+.phead{font-size:15px;margin:22px 0 0;color:var(--ink);font-weight:600}
+
+ol.dlg{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:10px}
+ol.dlg li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.who{font-family:var(--f-disp);font-size:12px;background:var(--soft);border-radius:6px;padding:2px 8px;margin-top:4px;white-space:nowrap}
+.dlg .de{display:block;font-size:17px;text-align:right}
+.dlg .tr{display:block;font-size:14px;color:var(--muted)}
+.model{font-family:var(--f-de);font-size:17px;line-height:1.9;direction:ltr;text-align:left;background:var(--soft);border-radius:10px;padding:14px 16px;margin:10px 0}
+.model p{margin:0 0 8px}
+
+/* recall mode */
+body.recall .a:not(.shown){color:transparent!important;background:var(--mark);border-radius:4px;cursor:pointer;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+body.recall .a:not(.shown) *{color:transparent!important}
+body.recall .a.shown{background:var(--markSoft);border-radius:4px}
+body.recall .w:not(:has(.art.shown)) .noun{color:var(--ink)}
+.a{transition:background-color .2s,color .2s}
+
+/* quiz */
+.qwrap{margin-top:26px}
+.qf{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.qf button{font-size:13px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;font-family:var(--f-ar)}
+.qf button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.qstats{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin:14px 0 8px;font-variant-numeric:tabular-nums}
+.qstats b{color:var(--ink);font-family:var(--f-disp)}
+.qcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px 20px;min-height:230px;display:flex;flex-direction:column;justify-content:center;text-align:center;cursor:pointer}
+.qmeta{font-size:12px;color:var(--muted);font-family:var(--f-disp);margin-bottom:10px}
+.qq{font-size:22px;line-height:1.6}
+.qq .de,.qa .de{font-size:24px}
+.qq small,.qa small{display:block;font-size:14px;color:var(--muted);margin-top:6px}
+.qa{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);font-size:18px}
+.qa .ans{background:var(--markSoft);padding:2px 8px;border-radius:6px}
+.qbtns{display:flex;gap:10px;margin-top:12px}
+.btn{flex:1;font-family:var(--f-disp);font-size:16px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.no{border-color:var(--die);color:var(--die)}
+.btn.yes{background:var(--das);border-color:var(--das);color:var(--on-yes)}
+.qdone{text-align:center}
+button:focus-visible,a:focus-visible,.a:focus-visible,.qcard:focus-visible{outline:2px solid var(--der);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:520px){
+  .intro h1{font-size:25px}
+  .chead h2{font-size:28px}
+  .rule{padding:16px 14px}
+  .top{gap:8px}
+}
+</style>
+
+<div class="app" dir="rtl" lang="ar">
+<header class="intro">
+  <h1>مراجعة <span class="de">Kapitel 4 · 5 · 6</span></h1>
+  <p>كل القواعد والجمل والكلمات من الفصول الثلاثة، بدون قسم قراءة الساعة. شغّل «وضع الاستذكار» فتختفي الإجابات تحت شريط أصفر، حاول أن تتذكّرها ثم اضغط عليها لتظهر. وفي تبويب «اختبر نفسك» بطاقات عشوائية من كل شيء.</p>
+  <div class="legend"><span class="de gm">der</span><span>مذكر</span><span class="de gn">das</span><span>محايد</span><span class="de gf">die</span><span>مؤنث</span><span class="de gp">die (Pl.)</span><span>جمع</span></div>
+</header>
+
+<div class="top">
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-t="k4">Kapitel 4</button>
+    <button class="tab" role="tab" data-t="k5">Kapitel 5</button>
+    <button class="tab" role="tab" data-t="k6">Kapitel 6</button>
+    <button class="tab" role="tab" data-t="quiz">اختبر نفسك</button>
+  </div>
+  <div class="rc" id="rc">
+    <button class="switch" id="recall" role="switch" aria-checked="false"><span class="track"></span>وضع الاستذكار</button>
+    <button class="mini" id="rehide" hidden>أخفِ من جديد</button>
+  </div>
+</div>
+
+<main>
+<!-- ===================== KAPITEL 4 ===================== -->
+<section class="chap" id="k4">
+  <header class="chead">
+    <p class="kick">Kapitel 4</p>
+    <h2>Guten Appetit</h2>
+    <p class="sub">الأكوزاتيف، الأفعال الناقصة، الطعام والتسوّق</p>
+    <nav class="jump"></nav>
+  </header>
+
+  <h2 class="part" id="k4-g" data-jump="القواعد">القواعد</h2>
+
+  <article class="rule" id="k4-kasus" data-jump="Nom. / Akk.">
+    <h3><span class="de">Nominativ</span> و <span class="de">Akkusativ</span></h3>
+    <p>فكّر فيهما مثل المرفوع والمنصوب في العربية. الـ <span class="de">Nominativ</span> هو الصيغة الأساسية للاسم، والـ <span class="de">Akkusativ</span> هو المفعول به المباشر.</p>
+    <div class="two">
+      <div><p class="lab">Nominativ · الفاعل</p>
+        <ul><li>فاعل الجملة: <span class="de">Der Hund frisst Fleisch.</span></li>
+        <li>الاسم بعد <span class="de">sein, werden, heißen, bleiben</span>: <span class="de">Das ist ein Auto.</span></li></ul></div>
+      <div><p class="lab">Akkusativ · المفعول به</p>
+        <ul><li>بعد أفعال معيّنة: <span class="de">Ich kaufe ein Auto.</span></li>
+        <li>بعد حروف جر معيّنة (في Kapitel 6).</li></ul></div>
+    </div>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th></th><th>Nominativ</th><th>Akkusativ</th></tr>
+      <tr><td>Maskulin</td><td class="gm">der · ein · kein</td><td class="gm"><span class="a">den · einen · keinen</span></td></tr>
+      <tr><td>Neutral</td><td class="gn">das · ein · kein</td><td class="gn"><span class="a">das · ein · kein</span></td></tr>
+      <tr><td>Feminin</td><td class="gf">die · eine · keine</td><td class="gf"><span class="a">die · eine · keine</span></td></tr>
+      <tr><td>Plural</td><td class="gp">die · – · keine</td><td class="gp"><span class="a">die · – · keine</span></td></tr>
+    </table></div>
+    <div class="tip"><b class="k">القاعدة</b>المذكّر فقط يتغيّر في الأكوزاتيف: <span class="de">der → den</span>، <span class="de">ein → einen</span>، <span class="de">kein → keinen</span>. المحايد والمؤنث والجمع يبقون كما هم.</div>
+    <ul class="ex">
+      <li><span class="de">Das ist der Stift. → Ich habe <span class="a">den</span> Stift.</span><span class="tr">هذا هو القلم. ← معي القلم.</span></li>
+      <li><span class="de">Das ist ein Wagen. → Du reparierst heute <span class="a">einen</span> Wagen.</span><span class="tr">هذه سيارة. ← أنت تصلح سيارة اليوم.</span></li>
+      <li><span class="de">Du kaufst <span class="a">das</span> Auto.</span><span class="tr">أنت تشتري السيارة.</span></li>
+      <li><span class="de">Er braucht <span class="a">die</span> Rechnung.</span><span class="tr">هو يحتاج الفاتورة.</span></li>
+      <li><span class="de">Das sind die Stifte. → Ich suche <span class="a">die</span> Stifte.</span><span class="tr">هذه هي الأقلام. ← أبحث عن الأقلام.</span></li>
+      <li><span class="de">Die Kuh isst <span class="a">das</span> Gras. Der Mensch isst <span class="a">den</span> Fisch.</span><span class="tr">البقرة تأكل العشب. الإنسان يأكل السمك.</span></li>
+    </ul>
+    <div class="tip"><b class="k">انتبه</b>المفعول به يمكن أن يأتي في أول الجملة. الأداة هي التي تخبرك بالحالة، وليس الترتيب.</div>
+    <ul class="ex">
+      <li><span class="de"><span class="a">Den</span> Hund liebe ich.</span><span class="tr">الكلب أحبّه. (الكلب مفعول به رغم أنه في البداية)</span></li>
+      <li><span class="de">Die Katze mag <span class="a">den</span> Hund, und <span class="a">der</span> Hund mag die Katze.</span><span class="tr">القطة تحب الكلب، والكلب يحب القطة.</span></li>
+    </ul>
+    <h4>الجمع دائمًا <span class="de">die</span></h4>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th>Singular</th><th>Plural</th></tr>
+      <tr><td class="gm">der / ein / kein Hafen</td><td class="gp"><span class="a">die / keine Häfen</span></td></tr>
+      <tr><td class="gn">das / ein / kein Hotel</td><td class="gp"><span class="a">die / keine Hotels</span></td></tr>
+      <tr><td class="gf">die / eine / keine Brücke</td><td class="gp"><span class="a">die / keine Brücken</span></td></tr>
+    </table></div>
+    <h4>أفعال تأخذ مفعولًا به (Akkusativ)</h4>
+    <div class="vchips" data-akkverbs></div>
+  </article>
+
+  <article class="rule" id="k4-wer" data-jump="wer / wen / was">
+    <h3><span class="de">Wer?</span> · <span class="de">Wen?</span> · <span class="de">Was?</span></h3>
+    <div class="scroll"><table class="tbl plain" dir="ltr">
+      <tr><th>Frage</th><th>für</th><th>Beispiel</th></tr>
+      <tr><td>Wer?</td><td class="ar" dir="rtl">شخص فاعل (Nominativ)</td><td><span class="a">Wer</span> hat einen Brief? – Ich.</td></tr>
+      <tr><td>Wen?</td><td class="ar" dir="rtl">شخص مفعول به (Akkusativ)</td><td><span class="a">Wen</span> sehen Sie oft? – Meine Kollegen.</td></tr>
+      <tr><td>Was?</td><td class="ar" dir="rtl">شيء (في الحالتين)</td><td><span class="a">Was</span> trinken Sie gern? – Champagner.</td></tr>
+    </table></div>
+    <ul class="ex">
+      <li><span class="de"><span class="a">Wen</span> verstehen Sie nicht? – Die Lehrerin.</span><span class="tr">من الذي لا تفهمه؟ المعلّمة. (شخص ← Wen)</span></li>
+      <li><span class="de"><span class="a">Was</span> verstehen Sie nicht? – Die Frage.</span><span class="tr">ما الذي لا تفهمه؟ السؤال. (شيء ← Was)</span></li>
+      <li><span class="de"><span class="a">Wen</span> lieben Sie? – Meine Familie.</span><span class="tr">من تحب؟ عائلتي.</span></li>
+      <li><span class="de"><span class="a">Was</span> lieben Sie? – Gute Musik, gutes Essen.</span><span class="tr">ماذا تحب؟ الموسيقى الجيدة والأكل الجيد.</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k4-kein" data-jump="kein / nicht">
+    <h3>النفي: <span class="de">kein</span> أم <span class="de">nicht</span>؟</h3>
+    <p><span class="de">kein</span> ينفي الاسم (بدلًا من <span class="de">ein</span> أو بدون أداة)، ويأخذ نهايات <span class="de">ein</span> نفسها. <span class="de">nicht</span> ينفي الفعل أو الصفة.</p>
+    <ul class="ex">
+      <li><span class="de">Ich esse <span class="a">keinen</span> Fisch.</span><span class="tr">لا آكل السمك. (der Fisch ← Akk.)</span></li>
+      <li><span class="de">Ich esse <span class="a">kein</span> Fleisch.</span><span class="tr">لا آكل اللحم. (das Fleisch)</span></li>
+      <li><span class="de">Ich trinke <span class="a">keine</span> Milch.</span><span class="tr">لا أشرب الحليب. (die Milch)</span></li>
+      <li><span class="de">Thomas hat ein Auto, aber er hat <span class="a">kein</span> Fahrrad.</span><span class="tr">توماس عنده سيارة، لكن ليس عنده دراجة.</span></li>
+      <li><span class="de">Ich esse <span class="a">nicht</span> gern Salat.</span><span class="tr">لا أحب أكل السلطة. (نفي الفعل ← nicht)</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k4-haben" data-jump="Ich habe Hunger">
+    <h3><span class="de">Ich habe …</span> للإحساس</h3>
+    <p>في الألمانية نقول «عندي جوع» وليس «أنا جائع». الاسم هنا بدون أداة.</p>
+    <ul class="ex">
+      <li><span class="de">Ich habe <span class="a">Hunger</span>.</span><span class="tr">أنا جائع.</span></li>
+      <li><span class="de">Ich habe <span class="a">Durst</span>.</span><span class="tr">أنا عطشان.</span></li>
+      <li><span class="de">Ich habe <span class="a">Angst</span>.</span><span class="tr">أنا خائف.</span></li>
+      <li><span class="de">Ich habe <span class="a">Ärger</span>.</span><span class="tr">عندي مشكلة / أنا متضايق.</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k4-modal" data-jump="möchten / wollen / können">
+    <h3>الأفعال الناقصة <span class="de">möchten · wollen · können</span></h3>
+    <p><span class="de">möchten</span> رغبة مهذّبة (أودّ)، <span class="de">wollen</span> إرادة ونيّة (أريد)، <span class="de">können</span> قدرة أو إمكانية (أستطيع).</p>
+    <div class="scroll" data-conj="möchten,wollen,können"></div>
+    <div class="tip"><b class="k">القاعدة</b><span class="de">ich</span> و <span class="de">er/es/sie</span> لهما الصيغة نفسها، بدون <span class="de">-t</span> في الآخر: <span class="de">ich will / er will</span>، <span class="de">ich kann / er kann</span>.</div>
+    <h4>ترتيب الجملة: الفعل الناقص + المصدر في آخر الجملة</h4>
+    <div class="frames">
+      <div><p class="flab">جملة خبرية: الفعل الناقص في الموضع الثاني</p>
+      <div class="frame"><span class="slot"><small>Pos. 1</small>Ich</span><span class="slot v"><small>Pos. 2</small>möchte</span><span class="slot"><small>…</small>zum Frühstück einen Kaffee</span><span class="slot e"><small>Ende</small>trinken.</span></div></div>
+      <div><p class="flab">سؤال بأداة استفهام W: الفعل الناقص في الموضع الثاني</p>
+      <div class="frame"><span class="slot"><small>Pos. 1</small>Was</span><span class="slot v"><small>Pos. 2</small>möchtest</span><span class="slot"><small>…</small>du am Mittag</span><span class="slot e"><small>Ende</small>essen?</span></div></div>
+      <div><p class="flab">سؤال نعم/لا: الفعل الناقص في الموضع الأول</p>
+      <div class="frame"><span class="slot v"><small>Pos. 1</small>Möchten</span><span class="slot"><small>…</small>Sie am Abend Salat</span><span class="slot e"><small>Ende</small>essen?</span></div></div>
+    </div>
+    <ul class="ex">
+      <li><span class="de">Ich will am Wochenende ins Kino <span class="a">gehen</span>.</span><span class="tr">أريد أن أذهب إلى السينما في عطلة نهاية الأسبوع.</span></li>
+      <li><span class="de">Wohin <span class="a">willst</span> du am Wochenende gehen?</span><span class="tr">إلى أين تريد أن تذهب في عطلة نهاية الأسبوع؟</span></li>
+      <li><span class="de"><span class="a">Wollen</span> Sie Fleisch und Fisch kaufen?</span><span class="tr">هل تريد شراء لحم وسمك؟</span></li>
+      <li><span class="de">Ich <span class="a">möchte</span> ein Kilo Äpfel, bitte.</span><span class="tr">أودّ كيلو تفاح من فضلك. (بدون مصدر: المعنى مفهوم)</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k4-moegen" data-jump="mögen">
+    <h3>الفعل <span class="de">mögen</span> (يحب)</h3>
+    <p>فعل عادي هنا: يأخذ مفعولًا به في الأكوزاتيف، ولا يحتاج مصدرًا في آخر الجملة.</p>
+    <div class="scroll" data-conj="mögen"></div>
+    <ul class="ex">
+      <li><span class="de">Zum Frühstück <span class="a">mag</span> ich <span class="a">den</span> Käse.</span><span class="tr">في الفطور أحب الجبن.</span></li>
+      <li><span class="de">Was <span class="a">magst</span> du zum Mittagessen?</span><span class="tr">ماذا تحب على الغداء؟</span></li>
+      <li><span class="de"><span class="a">Mögen</span> Sie Salami und Salat zum Abendessen?</span><span class="tr">هل تحب السلامي والسلطة على العشاء؟</span></li>
+      <li><span class="de">Ich mag <span class="a">keinen</span> Kaffee.</span><span class="tr">لا أحب القهوة.</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k4-adv" data-jump="morgens / täglich">
+    <h3>من الاسم إلى الظرف: <span class="de">jeden Morgen → morgens</span></h3>
+    <p>الظرف يُكتب بحرف صغير. أوقات اليوم وأيام الأسبوع تأخذ <span class="de">-s</span>، والوحدات الزمنية تأخذ <span class="de">-lich</span>. لاحظ أن <span class="de">jeden</span> نفسها أكوزاتيف مذكّر.</p>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th>Nomen</th><th>Adverb</th><th>Nomen</th><th>Adverb</th></tr>
+      <tr><td>jeden Morgen</td><td><span class="a">morgens</span></td><td>jeden Tag</td><td><span class="a">täglich</span></td></tr>
+      <tr><td>jeden Vormittag</td><td><span class="a">vormittags</span></td><td>jede Woche</td><td><span class="a">wöchentlich</span></td></tr>
+      <tr><td>jeden Mittag</td><td><span class="a">mittags</span></td><td>jeden Monat</td><td><span class="a">monatlich</span></td></tr>
+      <tr><td>jeden Nachmittag</td><td><span class="a">nachmittags</span></td><td>jedes Jahr</td><td><span class="a">jährlich</span></td></tr>
+      <tr><td>jeden Abend</td><td><span class="a">abends</span></td><td>jeden Samstag</td><td><span class="a">samstags</span></td></tr>
+      <tr><td>jede Nacht</td><td><span class="a">nachts</span></td><td>jeden Montag</td><td><span class="a">montags</span></td></tr>
+    </table></div>
+  </article>
+
+  <article class="rule" id="k4-komp" data-jump="Komposita">
+    <h3>الأسماء المركّبة: <span class="de">Nomen + Nomen</span></h3>
+    <p>الاسم المركّب يأخذ أداة <b>الاسم الأخير</b>.</p>
+    <ul class="ex">
+      <li><span class="de">die Schokolade + der Kuchen = <span class="a">der Schokoladenkuchen</span></span><span class="tr">كعكة الشوكولاتة</span></li>
+      <li><span class="de">der Fisch + die Suppe = <span class="a">die Fischsuppe</span></span><span class="tr">شوربة السمك</span></li>
+      <li><span class="de">der Apfel + der Saft = <span class="a">der Apfelsaft</span></span><span class="tr">عصير التفاح</span></li>
+      <li><span class="de">der Käse + das Brötchen = <span class="a">das Käsebrötchen</span></span><span class="tr">سندوتش جبن</span></li>
+      <li><span class="de">die Tomate + die Soße = <span class="a">die Tomatensoße</span></span><span class="tr">صلصة الطماطم</span></li>
+      <li><span class="de">der Einkauf + der Wagen = <span class="a">der Einkaufswagen</span></span><span class="tr">عربة التسوّق</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k4-mengen" data-jump="Mengen">
+    <h3>الكميات <span class="de">Mengenangaben</span></h3>
+    <p>بعد وحدة الكمية يأتي الاسم مباشرة <b>بدون أداة</b>: <span class="de">ein Kilo Äpfel</span>، <span class="de">eine Flasche Saft</span>.</p>
+    <div class="scroll"><table class="tbl plain" dir="ltr">
+      <tr><th>Menge</th><th>für</th><th>Beispiel</th></tr>
+      <tr><td>ein Kilo (kg)</td><td class="ar" dir="rtl">1000 جرام: فاكهة، خضار</td><td><span class="a">ein Kilo Tomaten</span></td></tr>
+      <tr><td>ein halbes Kilo</td><td class="ar" dir="rtl">500 جرام: فاكهة، جبن، لحم</td><td><span class="a">ein halbes Kilo Käse</span></td></tr>
+      <tr><td>das Gramm (g)</td><td class="ar" dir="rtl">توابل، شاي</td><td><span class="a">100 Gramm Tee</span></td></tr>
+      <tr><td>ein Liter (l)</td><td class="ar" dir="rtl">سوائل</td><td><span class="a">ein Liter Milch</span></td></tr>
+      <tr><td>eine Flasche</td><td class="ar" dir="rtl">زجاجة: مشروبات، زيت</td><td><span class="a">eine Flasche Saft</span></td></tr>
+      <tr><td>eine Packung</td><td class="ar" dir="rtl">علبة / كيس: مكرونة، زبدة، أرز</td><td><span class="a">eine Packung Nudeln</span></td></tr>
+      <tr><td>ein Stück</td><td class="ar" dir="rtl">قطعة: جبن، كعك، خبز</td><td><span class="a">ein Stück Kuchen</span></td></tr>
+      <tr><td>ein Becher</td><td class="ar" dir="rtl">كوب بلاستيك: زبادي، قشطة</td><td><span class="a">ein Becher Joghurt</span></td></tr>
+      <tr><td>ein Glas</td><td class="ar" dir="rtl">برطمان زجاج: مربى، عسل</td><td><span class="a">ein Glas Marmelade</span></td></tr>
+      <tr><td>eine Dose</td><td class="ar" dir="rtl">علبة معدن: كولا، سمك، ذرة</td><td><span class="a">eine Dose Cola</span></td></tr>
+      <tr><td>ein Bund</td><td class="ar" dir="rtl">حزمة: بقدونس، كرّاث</td><td><span class="a">ein Bund Petersilie</span></td></tr>
+      <tr><td>ein Laib</td><td class="ar" dir="rtl">رغيف كامل</td><td><span class="a">ein Laib Brot</span></td></tr>
+      <tr><td>eine Scheibe</td><td class="ar" dir="rtl">شريحة: خبز، جبن، سجق</td><td><span class="a">eine Scheibe Käse</span></td></tr>
+      <tr><td>ein Sack / eine Tüte</td><td class="ar" dir="rtl">شوال / كيس كبير</td><td><span class="a">ein Sack Kartoffeln</span></td></tr>
+      <tr><td>eine Schachtel</td><td class="ar" dir="rtl">علبة كرتون صغيرة</td><td><span class="a">eine Schachtel Eier</span></td></tr>
+    </table></div>
+  </article>
+
+  <article class="rule" id="k4-preis" data-jump="Preise">
+    <h3>السؤال عن السعر وقراءة الأسعار</h3>
+    <p>الضمير يتبع أداة الاسم: <span class="de gm">der → er</span>، <span class="de gn">das → es</span>، <span class="de gf">die → sie</span>، والجمع <span class="de gp">sie kosten</span>.</p>
+    <ul class="ex">
+      <li><span class="de">Was kostet der Saft? – <span class="a">Er</span> kostet 2 Euro.</span><span class="tr">كم سعر العصير؟ سعره 2 يورو.</span></li>
+      <li><span class="de">Wie viel kostet das Brot? – <span class="a">Es</span> kostet 99 Cent.</span><span class="tr">كم سعر الخبز؟ 99 سنت.</span></li>
+      <li><span class="de">Was kostet die Milch? – <span class="a">Sie</span> kostet 2,25 Euro.</span><span class="tr">كم سعر الحليب؟ 2,25 يورو.</span></li>
+      <li><span class="de">Was <span class="a">kosten</span> die Tomaten? – <span class="a">Sie kosten</span> 2 Euro pro Kilo.</span><span class="tr">كم سعر الطماطم؟ 2 يورو للكيلو.</span></li>
+    </ul>
+    <div class="tip"><b class="k">الأرقام</b>من 21 إلى 99 نقول الآحاد أولًا ثم <span class="de">und</span> ثم العشرات، مثل العربية: <span class="de">89 = neun·und·achtzig</span>.</div>
+    <ul class="ex">
+      <li><span class="de">89,00 € → <span class="a">neunundachtzig Euro</span></span></li>
+      <li><span class="de">0,75 € → <span class="a">fünfundsiebzig Cent</span></span></li>
+      <li><span class="de">25,17 € → <span class="a">fünfundzwanzig Euro (und) siebzehn (Cent)</span></span></li>
+      <li><span class="de">18,65 € → <span class="a">achtzehn Euro fünfundsechzig</span></span></li>
+    </ul>
+    <h4>رأيك في السعر (<span class="de">finden</span> + Akkusativ)</h4>
+    <ul class="ex">
+      <li><span class="de">Wie findest du <span class="a">den</span> Käse?</span><span class="tr">ما رأيك في الجبن؟</span></li>
+      <li><span class="de">Ich finde ihn <span class="a">sehr / wirklich / zu</span> teuer.</span><span class="tr">أجده غاليًا جدًا / فعلًا / أكثر من اللازم.</span></li>
+      <li><span class="de">Die Tomaten sind <span class="a">billig</span>. Das Angebot ist <span class="a">günstig</span>.</span><span class="tr">الطماطم رخيصة. العرض سعره مناسب.</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k4-ort" data-jump="Wo kaufen?">
+    <h3>أين تشتري؟ <span class="de">Wo kaufen Sie …?</span></h3>
+    <p>احفظ هذه كعبارات جاهزة (سندرس قاعدتها لاحقًا): <span class="de">im = in dem</span>، <span class="de">beim = bei dem</span>.</p>
+    <ul class="ex">
+      <li><span class="de">Ich kaufe das Brot <span class="a">in der</span> Bäckerei.</span><span class="tr">أشتري الخبز من المخبز.</span></li>
+      <li><span class="de">Ich kaufe das Fleisch <span class="a">in der</span> Metzgerei.</span><span class="tr">أشتري اللحم من محل الجزارة.</span></li>
+      <li><span class="de"><span class="a">Beim</span> Metzger hole ich Schinken und Hackfleisch.</span><span class="tr">عند الجزار آخذ هام ولحم مفروم.</span></li>
+      <li><span class="de">Ich kaufe frisches Obst und Gemüse <span class="a">auf dem</span> Markt.</span><span class="tr">أشتري الفاكهة والخضار الطازجة من السوق.</span></li>
+      <li><span class="de">Ich kaufe die Milch und den Käse <span class="a">im</span> Supermarkt.</span><span class="tr">أشتري الحليب والجبن من السوبرماركت.</span></li>
+      <li><span class="de">Im Supermarkt <span class="a">gibt es</span> fast alles.</span><span class="tr">في السوبرماركت يوجد تقريبًا كل شيء.</span></li>
+      <li><span class="de">Im Supermarkt findet man ein paar Dinge <span class="a">im Angebot</span>.</span><span class="tr">في السوبرماركت تجد بعض الأشياء عليها عرض.</span></li>
+    </ul>
+  </article>
+
+  <h2 class="part" id="k4-w" data-jump="الكلمات">الكلمات</h2>
+  <div data-v="k4_mahl"></div>
+  <div data-v="k4_obst"></div>
+  <div data-v="k4_gem"></div>
+  <div data-v="k4_back"></div>
+  <div data-v="k4_fleisch"></div>
+  <div data-v="k4_fruh"></div>
+  <div data-v="k4_vorrat"></div>
+  <div data-v="k4_trink"></div>
+  <div data-v="k4_einkauf"></div>
+  <div data-v="k4_adj"></div>
+  <div data-v="k4_vmahl"></div>
+  <div data-v="k4_vein"></div>
+
+  <h2 class="part" id="k4-r" data-jump="العبارات">العبارات</h2>
+  <div data-ph="k4_verk"></div>
+  <div data-ph="k4_kunde"></div>
+  <div data-ph="k4_essen"></div>
+  <div data-ph="k4_vorl"></div>
+  <h3 class="phead">حوار: في المحل</h3>
+  <ol class="dlg" data-dlg="k4_d1"></ol>
+  <h3 class="phead">حوار: ماذا تأكل في الفطور؟</h3>
+  <ol class="dlg" data-dlg="k4_d2"></ol>
+  <h3 class="phead">نص: يومي مع الأكل</h3>
+  <div class="model" lang="de"><p>Zum Frühstück <span class="a">esse ich gern</span> ein Brötchen mit Marmelade und trinke <span class="a">eine Tasse</span> Kaffee. <span class="a">Am Vormittag</span> trinke ich oft einen Kräutertee und esse manchmal einen Apfel. <span class="a">Mittags mag ich</span> Nudeln mit Tomatensoße und einen kleinen Salat. <span class="a">Am Nachmittag</span> esse ich gern <span class="a">ein Stück</span> Kuchen und trinke dazu einen Cappuccino. <span class="a">Am Abend</span> mag ich gern Brot mit Käse und Tomaten. Ich trinke <span class="a">oft</span> Wasser oder Tee über den ganzen Tag.</p></div>
+</section>
+
+<!-- ===================== KAPITEL 5 ===================== -->
+<section class="chap" id="k5" hidden>
+  <header class="chead">
+    <p class="kick">Kapitel 5</p>
+    <h2>Zeit, Familie, Termine</h2>
+    <p class="sub">حروف الجر الزمنية، ضمائر الملكية، كل الأفعال الناقصة، المواعيد</p>
+    <nav class="jump"></nav>
+  </header>
+
+  <h2 class="part" id="k5-g" data-jump="القواعد">القواعد</h2>
+
+  <article class="rule" id="k5-temp" data-jump="am / um / von…bis">
+    <h3>متى؟ <span class="de">am · um · von … bis</span></h3>
+    <div class="scroll"><table class="tbl plain" dir="ltr">
+      <tr><th>Präposition</th><th>mit</th><th>Beispiel</th></tr>
+      <tr><td>am</td><td class="ar" dir="rtl">أيام الأسبوع وفترات اليوم</td><td><span class="a">am</span> Freitag · <span class="a">am</span> Nachmittag · <span class="a">am</span> Donnerstagabend · <span class="a">am</span> Wochenende</td></tr>
+      <tr><td>in der</td><td class="ar" dir="rtl">الاستثناء: الليل</td><td><span class="a">in der</span> Nacht</td></tr>
+      <tr><td>um</td><td class="ar" dir="rtl">الساعة</td><td><span class="a">um</span> drei Uhr · <span class="a">um</span> halb sechs</td></tr>
+      <tr><td>von … bis</td><td class="ar" dir="rtl">من … إلى (ساعات وأيام)</td><td><span class="a">von</span> sieben <span class="a">bis</span> elf Uhr · <span class="a">von</span> Montag <span class="a">bis</span> Donnerstag</td></tr>
+    </table></div>
+    <div class="tip"><b class="k">القاعدة</b>كل أيام الأسبوع وفترات اليوم مذكّرة (<span class="de">der</span>) ما عدا <span class="de">die Nacht</span>، لذلك نقول <span class="de">am</span> (= <span class="de">an dem</span>) لكن <span class="de">in der Nacht</span>.</div>
+    <ul class="ex">
+      <li><span class="de">Wann hast du Zeit? – <span class="a">Am</span> Samstag <span class="a">um</span> fünf Uhr.</span><span class="tr">متى عندك وقت؟ يوم السبت الساعة الخامسة.</span></li>
+      <li><span class="de">Unser Büro ist <span class="a">von</span> 9 <span class="a">bis</span> 12 Uhr geöffnet.</span><span class="tr">مكتبنا مفتوح من 9 إلى 12.</span></li>
+      <li><span class="de">Ich arbeite immer <span class="a">von</span> 9 <span class="a">bis</span> 16 Uhr.</span><span class="tr">أعمل دائمًا من 9 إلى 16.</span></li>
+      <li><span class="de">Was machst du normalerweise <span class="a">am</span> Wochenende?</span><span class="tr">ماذا تفعل عادةً في عطلة نهاية الأسبوع؟</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k5-poss" data-jump="mein / dein …">
+    <h3>ضمائر الملكية <span class="de">Possessivpronomen</span></h3>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th>Person</th><th>Possessiv</th><th>Person</th><th>Possessiv</th></tr>
+      <tr><td>ich</td><td><span class="a">mein</span></td><td>wir</td><td><span class="a">unser</span></td></tr>
+      <tr><td>du</td><td><span class="a">dein</span></td><td>ihr</td><td><span class="a">euer</span></td></tr>
+      <tr><td>er / es</td><td><span class="a">sein</span></td><td>sie (Pl.)</td><td><span class="a">ihr</span></td></tr>
+      <tr><td>sie (Sg.)</td><td><span class="a">ihr</span></td><td>Sie (formell)</td><td><span class="a">Ihr</span></td></tr>
+    </table></div>
+    <p>تأخذ نهايات <span class="de">ein / kein</span> نفسها:</p>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th></th><th>Nominativ</th><th>Akkusativ</th></tr>
+      <tr><td>Maskulin</td><td class="gm">mein Bruder</td><td class="gm"><span class="a">meinen Bruder</span></td></tr>
+      <tr><td>Neutral</td><td class="gn">mein Kind</td><td class="gn"><span class="a">mein Kind</span></td></tr>
+      <tr><td>Feminin</td><td class="gf">meine Freundin</td><td class="gf"><span class="a">meine Freundin</span></td></tr>
+      <tr><td>Plural</td><td class="gp">meine Bücher</td><td class="gp"><span class="a">meine Bücher</span></td></tr>
+    </table></div>
+    <div class="tip"><b class="k">انتبه</b>عندما يأخذ <span class="de">euer</span> نهاية تسقط الـ e الثانية: <span class="de">eure Bücher</span>، <span class="de">euren Freund</span>. و <span class="de">ihr</span> قد تعني «لها» أو «لهم»، و <span class="de">Ihr</span> بحرف كبير تعني «لحضرتك».</div>
+    <ul class="ex">
+      <li><span class="de"><span class="a">Mein</span> Bruder kauft Brot, Milch und Eier.</span><span class="tr">أخي يشتري خبزًا وحليبًا وبيضًا.</span></li>
+      <li><span class="de"><span class="a">Dein</span> Kind spielt im Garten.</span><span class="tr">طفلك يلعب في الحديقة.</span></li>
+      <li><span class="de">Peter und <span class="a">seine</span> Freundin machen eine Party.</span><span class="tr">بيتر وصديقته يقيمان حفلة.</span></li>
+      <li><span class="de">Sara und <span class="a">ihre</span> Freundinnen bestehen die Prüfung.</span><span class="tr">سارة وصديقاتها ينجحن في الامتحان.</span></li>
+      <li><span class="de">Wir treffen <span class="a">unseren</span> Freund.</span><span class="tr">نقابل صديقنا. (Akk. مذكر ← -en)</span></li>
+      <li><span class="de">Verkaufen Sie <span class="a">Ihr</span> Auto?</span><span class="tr">هل تبيع سيارتك؟</span></li>
+      <li><span class="de">Peter und Olga treffen <span class="a">ihre</span> Freundin.</span><span class="tr">بيتر وأولجا يقابلان صديقتهما.</span></li>
+      <li><span class="de">Bringt ihr <span class="a">eure</span> Bücher?</span><span class="tr">هل تُحضرون كتبكم؟</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k5-modal" data-jump="Modalverben">
+    <h3>كل الأفعال الناقصة <span class="de">Modalverben</span></h3>
+    <div class="scroll" data-conj="können,müssen,dürfen,sollen,wollen,möchten"></div>
+    <div class="scroll"><table class="tbl plain" dir="ltr">
+      <tr><th>Modalverb</th><th>Bedeutung</th><th>Beispiel</th></tr>
+      <tr><td>können</td><td class="ar" dir="rtl"><span class="a">قدرة / إمكانية</span></td><td>Wir können uns um halb acht treffen.</td></tr>
+      <tr><td>müssen</td><td class="ar" dir="rtl"><span class="a">ضرورة (لازم)</span></td><td>Ich muss morgen um Viertel nach sieben aufstehen.</td></tr>
+      <tr><td>dürfen</td><td class="ar" dir="rtl"><span class="a">إذن (مسموح)</span></td><td>Am Sonntag dürfen wir lange schlafen.</td></tr>
+      <tr><td>nicht dürfen</td><td class="ar" dir="rtl"><span class="a">منع (ممنوع)</span></td><td>Man darf im Krankenhaus nicht rauchen.</td></tr>
+      <tr><td>sollen</td><td class="ar" dir="rtl"><span class="a">طلب من شخص آخر (المفروض)</span></td><td>Du sollst um Viertel vor neun in der Schule sein.</td></tr>
+      <tr><td>wollen</td><td class="ar" dir="rtl"><span class="a">نيّة / إرادة</span></td><td>Am Sonntag wollen wir grillen.</td></tr>
+      <tr><td>möchten</td><td class="ar" dir="rtl"><span class="a">رغبة مهذّبة</span></td><td>Ich möchte dich um halb sieben treffen.</td></tr>
+    </table></div>
+    <ul class="ex">
+      <li><span class="de">Wann <span class="a">können</span> wir am Wochenende ins Kino gehen?</span><span class="tr">متى نستطيع الذهاب إلى السينما في عطلة نهاية الأسبوع؟</span></li>
+      <li><span class="de"><span class="a">Musst</span> du am Samstag arbeiten?</span><span class="tr">هل يجب أن تعمل يوم السبت؟</span></li>
+      <li><span class="de"><span class="a">Dürfen</span> die Kinder heute bis zehn Uhr draußen bleiben?</span><span class="tr">هل يُسمح للأطفال بالبقاء في الخارج حتى العاشرة اليوم؟</span></li>
+      <li><span class="de">Darf man im Museum nicht <span class="a">fotografieren</span>?</span><span class="tr">أليس مسموحًا التصوير في المتحف؟</span></li>
+      <li><span class="de">Was <span class="a">sollen</span> wir am Wochenende kochen?</span><span class="tr">ماذا يُفترض أن نطبخ في عطلة نهاية الأسبوع؟</span></li>
+      <li><span class="de">Wann <span class="a">willst</span> du mich anrufen?</span><span class="tr">متى تريد أن تتصل بي؟</span></li>
+      <li><span class="de">Wohin <span class="a">möchtest</span> du am Samstag gehen?</span><span class="tr">إلى أين تودّ أن تذهب يوم السبت؟</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k5-mail" data-jump="E-Mail">
+    <h3>هيكل الإيميل الشخصي</h3>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th>Teil</th><th>Redemittel</th></tr>
+      <tr><td>Anrede</td><td>Hallo Johanna, · <span class="gm">Lieber</span> Paul, · <span class="gf">Liebe</span> Anna, · <span class="gp">Liebe</span> Freunde,</td></tr>
+      <tr><td>Gruß</td><td><span class="a">Liebe Grüße · Viele Grüße · Herzliche Grüße</span></td></tr>
+      <tr><td>Ende</td><td>(Name vom Absender)</td></tr>
+    </table></div>
+    <div class="tip"><b class="k">القاعدة</b><span class="de">Lieber</span> للمذكر، <span class="de">Liebe</span> للمؤنث والجمع. بعد الفاصلة يبدأ السطر التالي بحرف صغير: <span class="de">Hallo Johanna, ich habe …</span></div>
+    <div class="model" lang="de">
+      <p>Hallo Johanna,</p>
+      <p>ich habe ein Problem: Wir <span class="a">können</span> leider nicht ins Kino gehen. Stress, Stress, Stress: Hannes ist <span class="a">bis</span> Dienstag in Hamburg und ich <span class="a">muss</span> jeden Tag arbeiten, auch <span class="a">am</span> Wochenende! <span class="a">Am</span> Abend muss ich noch einkaufen und kochen. Und die Kinder <span class="a">müssen</span> Hausaufgaben machen und viel für die Schule lernen. Zum Arzt muss ich auch noch gehen … Am Sonntagnachmittag <span class="a">wollen</span> die Kinder und ich <span class="a">meinen</span> Bruder besuchen. Wollen wir nächste Woche <span class="a">am</span> Mittwoch zum Yoga gehen? Oder <span class="a">musst</span> du arbeiten?</p>
+      <p><span class="a">Liebe Grüße</span><br>Mara</p>
+    </div>
+  </article>
+
+  <article class="rule" id="k5-hofl" data-jump="Höflichkeit">
+    <h3>درجات الأدب في الطلب</h3>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th>Stufe</th><th>Beispiel</th></tr>
+      <tr><td>unhöflich</td><td>Ich will einen Termin!</td></tr>
+      <tr><td>höflich</td><td><span class="a">Kann ich bitte einen Termin haben?</span><br><span class="a">Ich möchte bitte einen Termin.</span></td></tr>
+      <tr><td>sehr höflich</td><td><span class="a">Ich hätte gern einen Termin.</span></td></tr>
+    </table></div>
+  </article>
+
+  <h2 class="part" id="k5-w" data-jump="الكلمات">الكلمات</h2>
+  <div data-v="k5_tage"></div>
+  <div data-v="k5_zeiten"></div>
+  <div data-v="k5_zeit"></div>
+  <div data-v="k5_fam_m"></div>
+  <div data-v="k5_fam_f"></div>
+  <div data-v="k5_fam_p"></div>
+  <div data-v="k5_status"></div>
+  <div data-v="k5_termin"></div>
+  <div data-v="k5_wochenende"></div>
+
+  <h2 class="part" id="k5-r" data-jump="العبارات">العبارات</h2>
+  <div data-ph="k5_fam"></div>
+  <div data-ph="k5_famtext"></div>
+  <div data-ph="k5_termin"></div>
+  <div data-ph="k5_tel"></div>
+  <div data-ph="k5_spaet"></div>
+  <h3 class="phead">حوار: نتفق على موعد</h3>
+  <ol class="dlg" data-dlg="k5_d1"></ol>
+  <h3 class="phead">حوار: موعد في مدرسة اللغة (بالهاتف)</h3>
+  <ol class="dlg" data-dlg="k5_d2"></ol>
+</section>
+
+<!-- ===================== KAPITEL 6 ===================== -->
+<section class="chap" id="k6" hidden>
+  <header class="chead">
+    <p class="kick">Kapitel 6</p>
+    <h2>Zeit mit Freunden</h2>
+    <p class="sub">التاريخ، الأفعال المنفصلة، الضمائر في الأكوزاتيف، حروف الجر، الماضي</p>
+    <nav class="jump"></nav>
+  </header>
+
+  <h2 class="part" id="k6-g" data-jump="القواعد">القواعد</h2>
+
+  <article class="rule" id="k6-datum" data-jump="Datum">
+    <h3>الأعداد الترتيبية والتاريخ</h3>
+    <p>من 1 إلى 19 نضيف <span class="de">-te</span>، ومن 20 فما فوق نضيف <span class="de">-ste</span>. الشواذ: <span class="de">erste, dritte, siebte</span> (و <span class="de">achte</span> بحرف t واحد).</p>
+    <div class="scroll"><table class="tbl" dir="ltr">
+      <tr><th>1–19 → -te</th><th></th><th>ab 20 → -ste</th><th></th></tr>
+      <tr><td>1.</td><td><span class="a">erste</span></td><td>20.</td><td><span class="a">zwanzigste</span></td></tr>
+      <tr><td>2.</td><td><span class="a">zweite</span></td><td>21.</td><td><span class="a">einundzwanzigste</span></td></tr>
+      <tr><td>3.</td><td><span class="a">dritte</span></td><td>22.</td><td><span class="a">zweiundzwanzigste</span></td></tr>
+      <tr><td>4.</td><td><span class="a">vierte</span></td><td>23.</td><td><span class="a">dreiundzwanzigste</span></td></tr>
+      <tr><td>5.</td><td><span class="a">fünfte</span></td><td>24.</td><td><span class="a">vierundzwanzigste</span></td></tr>
+      <tr><td>6.</td><td><span class="a">sechste</span></td><td>25.</td><td><span class="a">fünfundzwanzigste</span></td></tr>
+      <tr><td>7.</td><td><span class="a">siebte</span></td><td>26.</td><td><span class="a">sechsundzwanzigste</span></td></tr>
+      <tr><td>8.</td><td><span class="a">achte</span></td><td>27.</td><td><span class="a">siebenundzwanzigste</span></td></tr>
+      <tr><td>9.</td><td><span class="a">neunte</span></td><td>28.</td><td><span class="a">achtundzwanzigste</span></td></tr>
+      <tr><td>10.</td><td><span class="a">zehnte</span></td><td>29.</td><td><span class="a">neunundzwanzigste</span></td></tr>
+      <tr><td>11.</td><td><span class="a">elfte</span></td><td>30.</td><td><span class="a">dreißigste</span></td></tr>
+      <tr><td>12.</td><td><span class="a">zwölfte</span></td><td>31.</td><td><span class="a">einunddreißigste</span></td></tr>
+      <tr><td>13.–19.</td><td><span class="a">dreizehnte … neunzehnte</span></td><td></td><td></td></tr>
+    </table></div>
+    <div class="tip"><b class="k">القاعدة</b>مع <span class="de">der</span> ينتهي بـ <span class="de">-e</span>: <span class="de">Heute ist der achte März.</span> ومع <span class="de">am</span> و <span class="de">vom … bis zum</span> ينتهي بـ <span class="de">-en</span>: <span class="de">am achten März</span>.</div>
+    <ul class="ex">
+      <li><span class="de">Welches Datum ist heute? – Heute ist der <span class="a">achte</span> März.</span><span class="tr">ما تاريخ اليوم؟ اليوم الثامن من مارس.</span></li>
+      <li><span class="de">Gestern war der <span class="a">elfte</span> April.</span><span class="tr">أمس كان الحادي عشر من أبريل.</span></li>
+      <li><span class="de">Morgen ist der <span class="a">zwanzigste</span> Mai.</span><span class="tr">غدًا العشرون من مايو.</span></li>
+      <li><span class="de">Übermorgen ist der <span class="a">sechsundzwanzigste</span> Juni.</span><span class="tr">بعد غد السادس والعشرون من يونيو.</span></li>
+      <li><span class="de">Mein Geburtstag ist <span class="a">am ersten</span> Juli.</span><span class="tr">عيد ميلادي في الأول من يوليو.</span></li>
+      <li><span class="de"><span class="a">Am zehnten</span> Oktober fahre ich nach Deutschland.</span><span class="tr">في العاشر من أكتوبر أسافر إلى ألمانيا.</span></li>
+      <li><span class="de">Wir machen eine Party <span class="a">am siebenundzwanzigsten</span> Mai.</span><span class="tr">نقيم حفلة في السابع والعشرين من مايو.</span></li>
+      <li><span class="de">Ich bleibe in Kairo <span class="a">vom sechzehnten bis zum zwanzigsten</span> September.</span><span class="tr">أبقى في القاهرة من 16 إلى 20 سبتمبر.</span></li>
+      <li><span class="de"><span class="a">Vom elften bis zum dreißigsten</span> September haben wir Prüfungen.</span><span class="tr">من 11 إلى 30 سبتمبر عندنا امتحانات.</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k6-trenn" data-jump="Trennbare Verben">
+    <h3>الأفعال المنفصلة <span class="de">Trennbare Verben</span></h3>
+    <p>بادئة + فعل. في المضارع ينفصلان: الفعل في مكانه المعتاد والبادئة تذهب إلى <b>آخر الجملة</b>. النبر دائمًا على البادئة: <span class="de">ÁN-rufen</span>.</p>
+    <p class="lab">البادئات</p>
+    <p class="de" style="text-align:right;margin:0 0 8px">an · ab · aus · ein · bei · mit · nach · zu · hin · her · los · auf · fern · zurück · weg · vor · raus · runter · statt</p>
+    <div class="scroll"><table class="tbl plain" dir="ltr">
+      <tr><th>sehen</th><th>hören</th><th>machen</th></tr>
+      <tr><td>ansehen <span class="ar" dir="rtl"><span class="a">يشاهد</span></span></td><td>zuhören <span class="ar" dir="rtl"><span class="a">يستمع</span></span></td><td>anmachen <span class="ar" dir="rtl"><span class="a">يشغّل</span></span></td></tr>
+      <tr><td>aussehen <span class="ar" dir="rtl"><span class="a">يبدو</span></span></td><td>aufhören <span class="ar" dir="rtl"><span class="a">يتوقّف</span></span></td><td>ausmachen <span class="ar" dir="rtl"><span class="a">يطفئ</span></span></td></tr>
+      <tr><td>fernsehen <span class="ar" dir="rtl"><span class="a">يشاهد التلفاز</span></span></td><td>abhören <span class="ar" dir="rtl"><span class="a">يُسمّع / يتنصّت</span></span></td><td>aufmachen <span class="ar" dir="rtl"><span class="a">يفتح</span></span></td></tr>
+    </table></div>
+    <h4>ترتيب الجملة</h4>
+    <div class="frames">
+      <div><p class="flab">جملة خبرية</p><div class="frame"><span class="slot"><small>Pos. 1</small>Ich</span><span class="slot v"><small>Pos. 2</small>sehe</span><span class="slot"><small>…</small>einen Film</span><span class="slot e"><small>Ende</small>an.</span></div></div>
+      <div><p class="flab">سؤال W</p><div class="frame"><span class="slot"><small>Pos. 1</small>Um wie viel Uhr</span><span class="slot v"><small>Pos. 2</small>wachst</span><span class="slot"><small>…</small>du morgen</span><span class="slot e"><small>Ende</small>auf?</span></div></div>
+      <div><p class="flab">سؤال نعم/لا</p><div class="frame"><span class="slot v"><small>Pos. 1</small>Kommst</span><span class="slot"><small>…</small>du heute um 9:00 Uhr</span><span class="slot e"><small>Ende</small>an?</span></div></div>
+      <div><p class="flab">مع فعل ناقص: الفعل المنفصل يعود كلمة واحدة (مصدر) في الآخر</p><div class="frame"><span class="slot"><small>Pos. 1</small>Ich</span><span class="slot v"><small>Pos. 2</small>möchte</span><span class="slot"><small>…</small>in der Freizeit einen Film</span><span class="slot e"><small>Ende</small>ansehen.</span></div></div>
+    </div>
+    <ul class="ex">
+      <li><span class="de">Wann <span class="a">kannst</span> du mich <span class="a">anrufen</span>?</span><span class="tr">متى تستطيع أن تتصل بي؟</span></li>
+      <li><span class="de"><span class="a">Willst</span> du alle deine Freunde <span class="a">einladen</span>?</span><span class="tr">هل تريد أن تدعو كل أصدقائك؟</span></li>
+      <li><span class="de">Die Party <span class="a">fängt</span> um 18 Uhr <span class="a">an</span> und sie <span class="a">hört</span> um 23 Uhr <span class="a">auf</span>.</span><span class="tr">الحفلة تبدأ الساعة 18 وتنتهي الساعة 23.</span></li>
+      <li><span class="de">Meine Gäste <span class="a">bringen</span> Kuchen und Getränke <span class="a">mit</span>.</span><span class="tr">ضيوفي يُحضرون معهم كعكًا ومشروبات.</span></li>
+    </ul>
+    <div class="tip"><b class="k">انتبه</b>بعض الأفعال تغيّر حرفها مع <span class="de">du</span> و <span class="de">er</span>: <span class="de">du siehst / er sieht</span>، <span class="de">du fährst / er fährt</span>، <span class="de">du lädst / er lädt</span>، <span class="de">du fängst / er fängt</span>. ومع <span class="de">ihr</span> بدون تغيير: <span class="de">ihr seht, ihr fahrt, ihr ladet</span>. والأفعال المنتهية بـ -t أو -d تأخذ e: <span class="de">du bereitest vor, er bereitet vor</span>.</div>
+    <h4>قائمة الأفعال المنفصلة</h4>
+    <ul class="plist" data-trenn></ul>
+  </article>
+
+  <article class="rule" id="k6-pron" data-jump="mich / dich …">
+    <h3>الضمائر الشخصية في الأكوزاتيف</h3>
+    <div class="scroll"><table class="tbl plain" dir="ltr">
+      <tr><th>Nominativ</th><th>Akkusativ</th><th>Beispiel</th></tr>
+      <tr><td>ich</td><td><span class="a">mich</span></td><td>Wann rufst du mich an?</td></tr>
+      <tr><td>du</td><td><span class="a">dich</span></td><td>Kann ich dich heute anrufen?</td></tr>
+      <tr><td>er</td><td><span class="a">ihn</span></td><td>Ich lade ihn heute ein. (der Freund)</td></tr>
+      <tr><td>es</td><td><span class="a">es</span></td><td>Ich verkaufe es. (das Auto)</td></tr>
+      <tr><td>sie (Sg.)</td><td><span class="a">sie</span></td><td>Ich lese sie. (die E-Mail)</td></tr>
+      <tr><td>wir</td><td><span class="a">uns</span></td><td>Wann ruft ihr uns an?</td></tr>
+      <tr><td>ihr</td><td><span class="a">euch</span></td><td>Ich will euch heute einladen.</td></tr>
+      <tr><td>sie (Pl.)</td><td><span class="a">sie</span></td><td>Ich bringe sie mit. (die Bücher)</td></tr>
+      <tr><td>Sie</td><td><span class="a">Sie</span></td><td>Wann kann ich Sie anrufen?</td></tr>
+    </table></div>
+    <div class="tip"><b class="k">القاعدة</b>فقط <span class="de">er → ihn</span> تشبه <span class="de">der → den</span>. الضمائر المتغيّرة التي تحفظها: <span class="de">mich, dich, ihn, uns, euch</span>.</div>
+  </article>
+
+  <article class="rule" id="k6-praep" data-jump="für / ohne …">
+    <h3>حروف الجر مع الأكوزاتيف</h3>
+    <p>بعد هذه الحروف دائمًا أكوزاتيف: <span class="de"><b>für · ohne · gegen · durch · um · bis</b></span>. للحفظ: <span class="de">DOGFU + bis</span> (durch, ohne, gegen, für, um).</p>
+    <div class="scroll"><table class="tbl plain" dir="ltr">
+      <tr><th>Präposition</th><th>Bedeutung</th><th>Beispiel</th></tr>
+      <tr><td>für</td><td class="ar" dir="rtl"><span class="a">لأجل / لـ</span></td><td>Ich habe keine Zeit für <span class="a">dich</span>.</td></tr>
+      <tr><td>ohne</td><td class="ar" dir="rtl"><span class="a">بدون</span></td><td>Ich spiele nicht gern Fußball ohne <span class="a">meinen</span> Bruder.</td></tr>
+      <tr><td>gegen</td><td class="ar" dir="rtl"><span class="a">ضدّ</span></td><td>Im Fußballspiel war ich gegen <span class="a">meinen</span> Freund.</td></tr>
+      <tr><td>durch</td><td class="ar" dir="rtl"><span class="a">عبر / من خلال</span></td><td>Ich gehe durch <span class="a">die</span> Glastür ins Gebäude.</td></tr>
+      <tr><td>um</td><td class="ar" dir="rtl"><span class="a">حول</span></td><td>Ich mache eine Reise um <span class="a">die</span> Welt.</td></tr>
+      <tr><td>bis</td><td class="ar" dir="rtl"><span class="a">حتى</span></td><td>Hannes ist bis Dienstag in Hamburg.</td></tr>
+    </table></div>
+    <ul class="ex">
+      <li><span class="de">Ich habe ein Geschenk für <span class="a">dich</span>. (du)</span><span class="tr">عندي هدية لك.</span></li>
+      <li><span class="de">Ohne <span class="a">mich</span> geht ihr nicht ins Kino. (ich)</span><span class="tr">بدوني لن تذهبوا إلى السينما.</span></li>
+      <li><span class="de">Der Hund läuft um <span class="a">den</span> Baum herum. (der Baum)</span><span class="tr">الكلب يجري حول الشجرة.</span></li>
+      <li><span class="de">Ist das Paket für <span class="a">uns</span>? (wir)</span><span class="tr">هل الطرد لنا؟</span></li>
+      <li><span class="de">Er fährt durch <span class="a">den</span> Tunnel. (der Tunnel)</span><span class="tr">هو يقود عبر النفق.</span></li>
+      <li><span class="de">Er spielt gegen <span class="a">mich</span> Tennis. (ich)</span><span class="tr">هو يلعب التنس ضدّي.</span></li>
+      <li><span class="de">Ohne <span class="a">euch</span> macht das keinen Spaß. (ihr)</span><span class="tr">بدونكم هذا ليس ممتعًا.</span></li>
+    </ul>
+    <h4>السؤال عن شخص: <span class="de">wer / wen / für wen</span></h4>
+    <ul class="ex">
+      <li><span class="de"><span class="a">Wer</span> lädt dich ein?</span><span class="tr">من يدعوك؟ (فاعل ← Nominativ)</span></li>
+      <li><span class="de"><span class="a">Wen</span> lädst du ein?</span><span class="tr">من تدعو؟ (مفعول ← Akkusativ)</span></li>
+      <li><span class="de">Für <span class="a">wen</span> hast du Zeit?</span><span class="tr">لمن عندك وقت؟ (بعد für ← Akkusativ)</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k6-praet" data-jump="war / hatte">
+    <h3>الماضي <span class="de">Präteritum</span> من <span class="de">sein</span> و <span class="de">haben</span></h3>
+    <div class="scroll" data-conj="sein (Prät.),haben (Prät.)"></div>
+    <div class="tip"><b class="k">القاعدة</b><span class="de">ich</span> و <span class="de">er/es/sie</span> نفس الصيغة: <span class="de">ich war / er war</span>، <span class="de">ich hatte / sie hatte</span>.</div>
+    <ul class="ex">
+      <li><span class="de">Ich <span class="a">war</span> in Deutschland.</span><span class="tr">كنت في ألمانيا.</span></li>
+      <li><span class="de">Wann <span class="a">warst</span> du in Kairo?</span><span class="tr">متى كنت في القاهرة؟</span></li>
+      <li><span class="de"><span class="a">Warst</span> du schon zu Hause?</span><span class="tr">هل كنت في البيت بالفعل؟</span></li>
+      <li><span class="de">Ich <span class="a">hatte</span> ein Auto.</span><span class="tr">كان عندي سيارة.</span></li>
+      <li><span class="de">Wann <span class="a">hattest</span> du ein Auto?</span><span class="tr">متى كان عندك سيارة؟</span></li>
+      <li><span class="de"><span class="a">Hatten</span> Sie schon ein Problem?</span><span class="tr">هل واجهت مشكلة من قبل؟</span></li>
+      <li><span class="de">Die Getränke <span class="a">waren</span> leider ein bisschen teuer.</span><span class="tr">المشروبات كانت للأسف غالية قليلًا.</span></li>
+      <li><span class="de">Wir <span class="a">hatten</span> großen Hunger und auch ein bisschen Durst.</span><span class="tr">كنا جائعين جدًا وعطشانين قليلًا.</span></li>
+      <li><span class="de">Der Kellner war sehr nett, er <span class="a">hatte</span> immer ein Lächeln.</span><span class="tr">النادل كان لطيفًا جدًا، كان مبتسمًا دائمًا.</span></li>
+    </ul>
+  </article>
+
+  <article class="rule" id="k6-tag" data-jump="Tagesablauf">
+    <h3>وصف اليوم: <span class="de">zuerst · dann · danach</span></h3>
+    <p>عندما تبدأ الجملة بكلمة زمنية، يبقى الفعل في الموضع الثاني ويأتي الفاعل بعده.</p>
+    <div class="frames">
+      <div class="frame"><span class="slot"><small>Pos. 1</small>Dann</span><span class="slot v"><small>Pos. 2</small>räume</span><span class="slot"><small>…</small>ich mein Zimmer</span><span class="slot e"><small>Ende</small>auf.</span></div>
+      <div class="frame"><span class="slot"><small>Pos. 1</small>Um 20 Uhr</span><span class="slot v"><small>Pos. 2</small>rufe</span><span class="slot"><small>…</small>ich meinen Freund</span><span class="slot e"><small>Ende</small>an.</span></div>
+    </div>
+    <div class="two">
+      <div><p class="lab">الترتيب</p><span class="de">zuerst · dann · danach · später · zuletzt · zum Schluss · außerdem</span></div>
+      <div><p class="lab">كم مرة؟ (من الأكثر للأقل)</p><span class="de">immer · meistens · oft · manchmal · selten · nie</span></div>
+    </div>
+    <div class="model" lang="de"><p>Normalerweise <span class="a">wache ich</span> um 8 Uhr <span class="a">auf</span>. <span class="a">Zuerst</span> nehme ich ein Bad, <span class="a">dann räume ich</span> mein Zimmer <span class="a">auf</span>. <span class="a">Danach</span> bereite ich das Frühstück <span class="a">vor</span>. Um halb zehn <span class="a">ziehe ich mich an</span> und gehe zur Arbeit. Ich arbeite <span class="a">von</span> 10 <span class="a">bis</span> 18 Uhr. Danach <span class="a">komme ich</span> nach Hause <span class="a">zurück</span>. Um 20 Uhr rufe ich <span class="a">meinen</span> Freund an und wir treffen uns. <span class="a">Oft</span> sitzen wir in einem Café. <span class="a">Manchmal</span> spielen wir Playstation oder wir gehen ins Kino. <span class="a">Zum Schluss</span> sehe ich noch ein bisschen <span class="a">fern</span> und gehe um 23 Uhr ins Bett.</p></div>
+  </article>
+
+  <h2 class="part" id="k6-w" data-jump="الكلمات">الكلمات</h2>
+  <div data-v="k6_akt"></div>
+  <div data-v="k6_monate"></div>
+  <div data-v="k6_sport"></div>
+  <div data-v="k6_spiel"></div>
+  <div data-v="k6_fest"></div>
+  <div data-v="k6_verben"></div>
+  <div data-v="k6_ausdr"></div>
+
+  <h2 class="part" id="k6-r" data-jump="العبارات">العبارات</h2>
+  <div data-ph="k6_einl"></div>
+  <div data-ph="k6_kellner"></div>
+  <div data-ph="k6_gast"></div>
+  <div data-ph="k6_ereignis"></div>
+  <div data-ph="k6_geb"></div>
+  <h3 class="phead">نموذج دعوة</h3>
+  <div class="model" lang="de">
+    <p>Lieber Max,</p>
+    <p>wir <span class="a">laden dich</span> ganz herzlich <span class="a">ein</span>. <span class="a">Am</span> Samstag, <span class="a">den zehnten</span> Mai, machen wir eine große Party. Wir <span class="a">fangen</span> um 18 Uhr <span class="a">an</span> und wir tanzen bis Mitternacht. Wir bereiten leckeres Essen <span class="a">vor</span>. Wir holen Getränke und stellen <span class="a">sie</span> kalt. Bitte bring gute Laune <span class="a">mit</span>. Vielleicht <span class="a">kannst</span> du auch deine Gitarre <span class="a">mitbringen</span>? Wir freuen uns riesig auf dich. <span class="a">Hoffentlich hast du Zeit!</span></p>
+    <p><span class="a">Herzliche Grüße</span><br>Anna und Tom</p>
+  </div>
+  <h3 class="phead">حوار: في المطعم</h3>
+  <ol class="dlg" data-dlg="k6_d1"></ol>
+  <h3 class="phead">حوار: كيف كان المقهى؟</h3>
+  <ol class="dlg" data-dlg="k6_d2"></ol>
+</section>
+
+<!-- ===================== QUIZ ===================== -->
+<section class="chap" id="quiz" hidden>
+  <header class="chead">
+    <p class="kick">Karteikarten</p>
+    <h2>اختبر نفسك</h2>
+    <p class="sub">بطاقات عشوائية. فكّر في الإجابة أولًا، ثم اكشفها. البطاقات التي لم تعرفها تعود لك بعد قليل.</p>
+  </header>
+  <div class="qwrap">
+    <p class="lab">الفصل</p>
+    <div class="qf" id="qfCh"></div>
+    <p class="lab">النوع</p>
+    <div class="qf" id="qfCat"></div>
+    <div class="qstats"><span>المتبقي <b id="sLeft">0</b></span><span>عرفتها <b id="sYes">0</b></span><span>للمراجعة <b id="sNo">0</b></span></div>
+    <div class="qcard" id="qcard" tabindex="0" role="button" aria-label="اضغط لكشف الإجابة">
+      <div class="qmeta" id="qmeta"></div>
+      <div class="qq" id="qq"></div>
+      <div class="qa" id="qa" hidden></div>
+    </div>
+    <div class="qbtns">
+      <button class="btn primary" id="bReveal">اكشف الإجابة</button>
+      <button class="btn no" id="bNo" hidden>لم أعرفها</button>
+      <button class="btn yes" id="bYes" hidden>عرفتها</button>
+    </div>
+    <div class="qbtns"><button class="mini" id="bRestart">ابدأ من جديد</button></div>
+  </div>
+</section>
+</main>
+</div>
+
+<script>
+/* ---------- DATA ---------- */
+// vocab: [gender m|n|f|p|'' , word, arabic, note]
+const V = {
+ k4_mahl:{t:"Die Mahlzeiten · الوجبات",i:[["f","Mahlzeit","الوجبة"],["n","Frühstück","الفطور","zum Frühstück"],["n","Mittagessen","الغداء","zum Mittagessen"],["n","Abendessen","العشاء","zum Abendessen"]]},
+ k4_obst:{t:"Obst · الفاكهة",i:[["n","Obst","الفاكهة"],["m","Apfel","تفاحة"],["f","Banane","موزة"],["f","Orange","برتقالة"],["f","Erdbeere","فراولة","die Erdbeeren"],["f","Traube","عنب","die Trauben"],["f","Kirsche","كرز"],["f","Birne","كمثرى"],["f","Melone","شمام / بطيخ"],["f","Zitrone","ليمون"],["f","Ananas","أناناس"]]},
+ k4_gem:{t:"Gemüse · الخضار",i:[["n","Gemüse","الخضار"],["f","Tomate","طماطم"],["f","Gurke","خيار"],["f","Karotte","جزر"],["f","Kartoffel","بطاطس"],["f","Zwiebel","بصل"],["m","Salat","خس / سلطة"],["m","Spinat","سبانخ"],["m","Blumenkohl","قرنبيط"],["m","Brokkoli","بروكلي"],["f","Paprika","فلفل رومي"],["f","Petersilie","بقدونس"],["m","Lauch","كرّاث"],["m","Mais","ذرة"]]},
+ k4_back:{t:"Gebackenes · من المخبز",i:[["n","Brot","خبز"],["n","Brötchen","خبز صغير (عيش فينو)"],["n","Croissant","كرواسون"],["m","Kuchen","كعكة"],["f","Torte","تورتة"],["f","Brezel","بريتزل"],["m","Keks","بسكويت"],["f","Waffel","وافل"],["n","Sandwich","ساندويتش"]]},
+ k4_fleisch:{t:"Fleisch & Fisch · اللحوم والسمك",i:[["n","Fleisch","لحم"],["n","Hähnchen","دجاج","= das Hühnchen"],["n","Rindfleisch","لحم بقري"],["n","Hackfleisch","لحم مفروم"],["f","Wurst","سجق"],["m","Schinken","هام (لحم مملّح)"],["f","Salami","سلامي"],["m","Fisch","سمك"]]},
+ k4_fruh:{t:"Frühstück & Milchprodukte · الفطور ومنتجات الألبان",i:[["f","Milch","حليب"],["m","Joghurt","زبادي"],["m","Käse","جبن"],["f","Butter","زبدة"],["f","Sahne","قشطة / كريمة"],["f","Marmelade","مربى"],["m","Honig","عسل"],["n","Ei","بيضة","die Eier"],["n","Müsli","موسلي (حبوب)"],["n","Omelett","أومليت"]]},
+ k4_vorrat:{t:"Im Supermarkt · من السوبرماركت",i:[["m","Zucker","سكر"],["n","Salz","ملح"],["m","Pfeffer","فلفل أسود"],["m","Essig","خل"],["n","Öl","زيت"],["n","Mehl","دقيق"],["m","Reis","أرز"],["p","Nudeln","مكرونة"],["f","Schokolade","شوكولاتة"],["p","Chips","شيبس"],["f","Suppe","شوربة"],["f","Pizza","بيتزا"],["f","Soße","صلصة"]]},
+ k4_trink:{t:"Getränke · المشروبات",i:[["n","Getränk","المشروب"],["n","Wasser","ماء"],["m","Tee","شاي"],["m","Kräutertee","شاي أعشاب"],["m","Kaffee","قهوة"],["m","Cappuccino","كابتشينو"],["m","Saft","عصير"],["m","Apfelsaft","عصير تفاح"],["m","Orangensaft","عصير برتقال"],["f","Cola","كولا"],["m","Kakao","كاكاو"],["n","Bier","بيرة"],["m","Wein","نبيذ"],["f","Tasse","فنجان"]]},
+ k4_einkauf:{t:"Einkaufen · التسوّق",i:[["f","Bäckerei","المخبز"],["f","Metzgerei","محل الجزارة"],["m","Metzger","الجزّار"],["m","Markt","السوق"],["m","Supermarkt","السوبرماركت"],["m","Einkaufswagen","عربة التسوّق"],["f","Einkaufstasche","شنطة التسوّق"],["f","Tüte","كيس"],["f","Kasse","الكاشير / الخزينة"],["m","Kassenzettel","إيصال الشراء"],["n","Angebot","عرض / تخفيض"],["m","Verkäufer","البائع"],["m","Kunde","الزبون"],["m","Preis","السعر"],["f","Rechnung","الفاتورة"]]},
+ k4_adj:{t:"Adjektive & Ausdrücke · صفات وتعبيرات",i:[["","teuer","غالٍ"],["","billig","رخيص"],["","günstig","بسعر مناسب"],["","frisch","طازج"],["","lecker","لذيذ"],["","satt","شبعان"],["","gern","بحبّ / بسرور"],["","lieber","أفضّل"],["","Hunger haben","يكون جائعًا"],["","Durst haben","يكون عطشانًا"]]},
+ k4_vmahl:{t:"Verben: Mahlzeiten · أفعال الأكل",i:[["","essen","يأكل","du isst, er isst"],["","trinken","يشرب"],["","kochen","يطبخ"],["","backen","يخبز"],["","frühstücken","يفطر"],["","zu Mittag essen","يتغدّى"],["","zu Abend essen","يتعشّى"],["","schneiden","يقطّع"],["","mischen","يخلط"],["","braten","يقلي / يحمّر","du brätst, er brät"],["","schmecken","طعمه …"]]},
+ k4_vein:{t:"Verben: Einkaufen · أفعال التسوّق",i:[["","kaufen","يشتري"],["","bezahlen","يدفع"],["","kosten","يكلّف"],["","verkaufen","يبيع"],["","suchen","يبحث عن"],["","finden","يجد"],["","brauchen","يحتاج"],["","nehmen","يأخذ","du nimmst, er nimmt"],["","zeigen","يُري"],["","probieren","يتذوّق / يجرّب"],["","holen","يجلب"],["","wechseln","يفكّ (نقود)"]]},
+
+ k5_tage:{t:"Die Wochentage · أيام الأسبوع",i:[["m","Montag","الاثنين"],["m","Dienstag","الثلاثاء"],["m","Mittwoch","الأربعاء"],["m","Donnerstag","الخميس"],["m","Freitag","الجمعة"],["m","Samstag","السبت"],["m","Sonntag","الأحد"],["n","Wochenende","عطلة نهاية الأسبوع"]]},
+ k5_zeiten:{t:"Die Tageszeiten · فترات اليوم",i:[["m","Morgen","الصباح"],["m","Vormittag","الضحى (قبل الظهر)"],["m","Mittag","الظهر"],["m","Nachmittag","بعد الظهر"],["m","Abend","المساء"],["f","Nacht","الليل","in der Nacht"]]},
+ k5_zeit:{t:"Zeit · الوقت",i:[["n","Jahr","السنة","= 12 Monate"],["m","Monat","الشهر","= 4 Wochen"],["f","Woche","الأسبوع","= 7 Tage"],["m","Tag","اليوم","= 24 Stunden"],["f","Stunde","الساعة (مدة)","= 60 Minuten"],["f","halbe Stunde","نصف ساعة","= 30 Minuten"],["f","Minute","الدقيقة","= 60 Sekunden"],["f","Sekunde","الثانية"],["m","Moment","اللحظة"]]},
+ k5_fam_m:{t:"Die Familie · مذكّر",i:[["m","Vater","الأب"],["m","Sohn","الابن"],["m","Bruder","الأخ"],["m","Onkel","العم / الخال"],["m","Großvater","الجد","= der Opa"],["m","Enkel","الحفيد"],["m","Schwiegervater","والد الزوج / الزوجة"],["m","Neffe","ابن الأخ / الأخت"],["m","Cousin","ابن العم / الخال"],["m","Ehemann","الزوج","= der Mann"]]},
+ k5_fam_f:{t:"Die Familie · مؤنث",i:[["f","Mutter","الأم"],["f","Tochter","الابنة"],["f","Schwester","الأخت"],["f","Tante","العمة / الخالة"],["f","Großmutter","الجدة","= die Oma"],["f","Enkelin","الحفيدة"],["f","Schwiegermutter","والدة الزوج / الزوجة"],["f","Nichte","بنت الأخ / الأخت"],["f","Cousine","بنت العم / الخال"],["f","Ehefrau","الزوجة","= die Frau"]]},
+ k5_fam_p:{t:"Die Familie · جمع",i:[["p","Eltern","الوالدان"],["p","Geschwister","الإخوة"],["p","Großeltern","الأجداد"],["p","Enkelkinder","الأحفاد"],["p","Kinder","الأطفال"],["p","Verwandten","الأقارب"]]},
+ k5_status:{t:"Familienstand & Beruf · الحالة والعمل",i:[["","ledig","أعزب"],["","Single","غير مرتبط"],["","verheiratet","متزوّج"],["","geschieden","مطلّق"],["","arbeitslos","عاطل عن العمل"],["m","Student","الطالب","die Studentin"],["m","Job","الوظيفة"],["","arbeiten als …","يعمل كـ … (بدون أداة)"]]},
+ k5_termin:{t:"Termine · المواعيد",i:[["m","Termin","الموعد"],["m","Arzt","الطبيب"],["f","Sprachschule","مدرسة اللغة"],["m","Sprachkurs","كورس اللغة"],["n","Büro","المكتب"],["","geöffnet / offen","مفتوح"],["","frei haben","عنده وقت فراغ"],["","Zeit haben","عنده وقت"],["","Lust haben auf …","عنده رغبة في …"],["","passen","يناسب","Das passt mir."],["","pünktlich","في الموعد"],["","einverstanden","موافق"],["","leider","للأسف"]]},
+ k5_wochenende:{t:"Am Wochenende · في العطلة",i:[["","Zeitung lesen","يقرأ الجريدة"],["","mit der Familie zu Mittag essen","يتغدّى مع العائلة"],["","lange schlafen","ينام طويلًا"],["","Fußball spielen","يلعب كرة القدم"],["","Freunde treffen","يقابل الأصدقاء"],["","lernen","يذاكر"],["","Oma besuchen","يزور الجدة"],["","in den Supermarkt gehen","يذهب إلى السوبرماركت"],["","ins Kino gehen","يذهب إلى السينما"],["","am Computer arbeiten","يعمل على الكمبيوتر"],["","Musik hören","يسمع موسيقى"],["","spazieren gehen","يتمشّى"],["","malen","يرسم"],["","tanzen","يرقص"]]},
+
+ k6_akt:{t:"Freizeit · أنشطة وقت الفراغ",i:[["","ins Fitness-Studio gehen","يذهب إلى الجيم"],["","Fußball spielen","يلعب كرة القدم"],["","grillen","يشوي (باربكيو)"],["","Spiele spielen","يلعب ألعابًا"],["","Ski fahren","يتزلّج"],["","klettern","يتسلّق"],["","feiern","يحتفل"],["","Fahrrad fahren","يركب الدراجة"],["","wandern","يتنزّه سيرًا في الطبيعة"],["","einen Film sehen","يشاهد فيلمًا"],["","ins Café gehen","يذهب إلى المقهى"],["","Computer spielen","يلعب على الكمبيوتر"]]},
+ k6_monate:{t:"Die Monate · الشهور (كلها der)",i:[["m","Januar","يناير"],["m","Februar","فبراير"],["m","März","مارس"],["m","April","أبريل"],["m","Mai","مايو"],["m","Juni","يونيو"],["m","Juli","يوليو"],["m","August","أغسطس"],["m","September","سبتمبر"],["m","Oktober","أكتوبر"],["m","November","نوفمبر"],["m","Dezember","ديسمبر"],["n","Datum","التاريخ"],["m","Geburtstag","عيد الميلاد"]]},
+ k6_sport:{t:"Sport & Draußen · الرياضة والخروج",i:[["n","Training","التمرين"],["n","Gerät","الجهاز"],["f","Dusche","الدش"],["f","Tasche","الحقيبة"],["m","Ball","الكرة"],["n","Tor","المرمى / الهدف"],["m","Platz","الملعب / المكان"],["n","Team","الفريق"],["m","Spieler","اللاعب"],["f","Pause","الاستراحة"],["m","Schnee","الثلج"],["m","Berg","الجبل"],["f","Jacke","الجاكيت"],["f","Brille","النظارة"],["m","Helm","الخوذة"],["f","Piste","مسار التزلّج"],["m","Stein","الحجر"],["f","Wand","الحائط"],["n","Seil","الحبل"],["n","Fahrrad","الدراجة"],["m","Weg","الطريق"],["f","Lampe","المصباح"],["m","Park","الحديقة العامة"],["f","Straße","الشارع"],["m","Wald","الغابة"],["m","Rucksack","حقيبة الظهر"]]},
+ k6_spiel:{t:"Spiele, Kino & Computer · ألعاب وسينما وكمبيوتر",i:[["n","Spiel","اللعبة / المباراة"],["f","Karte","الورقة / قائمة الطعام"],["m","Würfel","النرد"],["m","Tisch","الطاولة"],["f","Runde","الجولة"],["m","Film","الفيلم"],["n","Popcorn","الفشار"],["m","Schauspieler","الممثل"],["m","Computer","الكمبيوتر"],["f","Maus","الماوس"],["f","Tastatur","لوحة المفاتيح"],["m","Bildschirm","الشاشة"]]},
+ k6_fest:{t:"Feiern & Café · الاحتفال والمقهى",i:[["f","Party","الحفلة"],["n","Fest","الاحتفال"],["f","Einladung","الدعوة"],["m","Gast","الضيف","die Gäste"],["n","Geschenk","الهدية"],["f","Musik","الموسيقى"],["m","Tanz","الرقصة"],["f","Laune","المزاج"],["n","Wohnzimmer","غرفة المعيشة"],["n","Café","المقهى"],["m","Kellner","النادل"],["f","Kohle","الفحم"],["m","Grill","الشوّاية"],["m","Teller","الطبق"],["n","Trinkgeld","البقشيش"]]},
+ k6_verben:{t:"Verben · أفعال",i:[["","trainieren","يتمرّن"],["","laufen","يجري","du läufst"],["","üben","يتدرّب"],["","schwitzen","يعرق"],["","starten / stoppen","يبدأ / يوقف"],["","schießen","يسدّد (الكرة)"],["","passen","يمرّر / يناسب"],["","gewinnen","يفوز"],["","verlieren","يخسر"],["","werfen","يرمي","du wirfst"],["","lachen","يضحك"],["","warten","ينتظر"],["","sitzen","يجلس"],["","fallen","يسقط","du fällst"],["","stehen","يقف"],["","helfen","يساعد","du hilfst"],["","halten","يمسك","du hältst"],["","ziehen","يسحب"],["","steigen","يصعد"],["","schauen","ينظر"],["","atmen","يتنفّس"],["","sprechen","يتكلّم","du sprichst"],["","bremsen","يفرمل"],["","rasten","يستريح"],["","bestellen","يطلب (في المطعم)"],["","zahlen","يدفع"],["","klicken","ينقر"],["","wählen","يختار"],["","schenken","يُهدي"],["","bekommen","يحصل على"],["","wünschen","يتمنّى"]]},
+ k6_ausdr:{t:"Ausdrücke · تعبيرات",i:[["","eine Party machen","يقيم حفلة"],["","gute Laune haben","مزاجه جيد"],["","Spaß haben","يستمتع"],["","zusammen tanzen","يرقصون معًا"],["","alles Gute wünschen","يتمنّى كل الخير"],["","Geschenke bekommen","يحصل على هدايا"],["","Getränke kalt stellen","يضع المشروبات في الثلاجة"],["","sich freuen auf …","يتطلّع إلى …"]]}
+};
+
+// phrases: {t, i:[[arabic, german]]}
+const P = {
+ k4_verk:{t:"البائع يقول",i:[["تفضّل؟ ماذا تريد؟","Bitte? Was möchten Sie?"],["هل تريد شيئًا آخر؟","Sonst noch etwas?"],["هل هذا كل شيء؟","Ist das alles?"],["هناك يمينًا / يسارًا / على طول.","Dort rechts / links / geradeaus."],["هذا يكلّف … / هذه تكلّف …","Das kostet … / Sie kosten …"],["نعم، لحظة.","Ja, Moment."],["من عليه الدور؟","Wer kommt dran?"],["المجموع إذن 18,65 يورو.","Das macht dann 18,65 Euro."],["هل تحتاج إيصال الشراء؟","Brauchen Sie den Kassenzettel?"]]},
+ k4_kunde:{t:"الزبون يقول",i:[["أريد …، من فضلك. هل عندكم …؟","Ich möchte …, bitte. Haben Sie …?"],["نعم، أحتاج أيضًا … / لا، شكرًا.","Ja, ich brauche noch … / Nein, danke."],["نعم، شكرًا. / لا، سآخذ أيضًا …","Ja, danke. / Nein, ich nehme bitte noch …"],["أين أجد …؟ / أين يوجد …؟","Wo finde ich …? / Wo gibt es …?"],["كم سعر …؟","Was kostet …? / Wie viel kostet …?"],["هل يمكنك أن تفكّ لي؟","Können Sie wechseln?"],["عفوًا، أحتاج يورو لعربة التسوّق.","Entschuldigung, ich brauche einen Euro für den Einkaufswagen."],["أنا، من فضلك. (دوري)","Ich, bitte."],["أريد قطعة جبن إمنتال.","Ich möchte ein Stück Emmentaler, bitte."],["سآخذ أيضًا 150 جرام هام.","Ja, ich nehme noch 150 Gramm Schinken."],["عفوًا، أين أجد الأرز؟","Entschuldigung, wo finde ich Reis?"],["أحتاج كيسًا أيضًا.","Ich brauche noch eine Tüte, bitte."],["ماذا؟ 35 سنتًا؟ هذا غالٍ!","Wie bitte? 35 Cent? Das ist aber teuer!"]]},
+ k4_essen:{t:"على الأكل",i:[["بالهناء والشفاء!","Guten Appetit!"],["شكرًا، ولك أيضًا!","Danke, gleichfalls! / Danke, ebenfalls!"],["هل تريد المزيد من …؟","Möchtest du noch …? / Möchten Sie noch …?"],["نعم، من فضلك. … طعمه جيد جدًا.","Ja, bitte. … schmeckt / schmecken sehr gut."],["نعم، بكل سرور. … لذيذ جدًا.","Ja, gerne. … ist / sind sehr lecker."],["لا، شكرًا. لا آكل …","Nein, danke. Ich esse keinen / kein / keine …"],["لا، شكرًا. أنا شبعان.","Nein, danke. Ich bin satt."]]},
+ k4_vorl:{t:"ماذا تحب؟",i:[["هل تحب أكل …؟","Isst du gern …? / Essen Sie gern …?"],["نعم، جدًا. / لا، ليس كثيرًا.","Ja, sehr gern. / Nein, nicht so gern."],["ماذا تحب أن تأكل / تشرب؟","Was isst du gern? / Was trinkst du gern?"],["أحب / لا أحب أكل …","Ich esse (nicht) gern …"],["أحب … (جدًا / لا أحبه)","Ich mag … (sehr / nicht) gern."],["لا أحب … إطلاقًا","Ich mag keinen / kein / keine …"],["في الفطور آكل / أشرب …","Zum Frühstück esse / trinke ich …"],["في الضحى آكل / أشرب …","Vormittags / Am Vormittag esse / trinke ich …"],["في الظهر أحب …","Mittags mag ich …"],["بعد الظهر أحب أن آكل …","Nachmittags / Am Nachmittag esse ich gern …"],["في المساء أحب …","Abends / Am Abend mag ich (gern) …"],["كثيرًا ما أشرب …","Ich trinke oft …"],["أفضّل الشاي بالحليب.","Ich trinke lieber Tee mit Milch."],["ما رأيك في …؟","Wie findest du …?"]]},
+
+ k5_fam:{t:"أسئلة وأجوبة عن العائلة",i:[["ما اسم … ـك؟","Wie heißt dein / deine …?"],["اسم … ـي …","Mein / Meine … heißt …"],["كم عمر … ـك؟","Wie alt ist dein / deine …?"],["عمره / عمرها … سنة.","Er / Sie ist … Jahre alt."],["أين يسكن … ـك؟","Wo wohnt dein / deine …?"],["يسكن / تسكن في …","Er / Sie wohnt in …"],["ماذا يعمل … ـك؟","Was macht dein / deine … beruflich? / Was arbeitet …?"],["يعمل / تعمل كـ …","Er / Sie arbeitet als …"],["ما زال / ما زالت طالبًا.","Er / Sie ist noch Student / Studentin."],["هل … ـك متزوّج؟","Ist dein / deine … verheiratet?"],["نعم، متزوّج. / لا، غير مرتبط.","Ja, er / sie ist verheiratet. / Nein, er / sie ist Single."],["هل عنده / عندها أطفال؟","Hat dein / deine … Kinder?"],["نعم، عنده … أطفال. / لا، ليس عنده أطفال.","Ja, er / sie hat … Kinder. / Nein, er / sie hat keine Kinder."]]},
+ k5_famtext:{t:"تتكلّم عن عائلتك",i:[["أسكن مع عائلتي. نحن … أشخاص إجمالًا.","Ich wohne mit meiner Familie. Wir sind insgesamt … Personen."],["أبي وأمي و … وأنا.","Mein Vater, meine Mutter, … und ich."],["ليس عنده عمل بعد / هو عاطل.","Er hat noch keinen Job. / Er ist arbeitslos."],["أخي أعزب / متزوّج / مطلّق.","Mein Bruder ist ledig / verheiratet / geschieden."],["الأطفال اسمهم … و …","Die Kinder heißen … und …"]]},
+ k5_termin:{t:"نتفق على موعد",i:[["أودّ الحصول على موعد.","Ich hätte gern einen Termin."],["هل عندكم موعد اليوم / غدًا / يوم …؟","Haben Sie heute / morgen / am … einen Termin (frei)?"],["نعم، يناسب الساعة 14:15.","Ja. Da geht es um 14:15 Uhr."],["لا، اليوم لا يناسب للأسف، لكن يوم …","Nein, heute geht es leider nicht, aber am …"],["هل يمكنك المجيء يوم … الساعة …؟","Können Sie am … um … kommen?"],["هل يناسب يوم … الساعة …؟","Geht es am … um … Uhr?"],["نعم، أستطيع. / لا، للأسف لا أستطيع.","Ja, da kann ich. / Nein, da kann ich leider nicht."],["نعم، يناسب. / لا، للأسف لا يناسب.","Ja, das geht. / Nein, das geht leider nicht."],["هل عندك شيء بعد ظهر اليوم؟","Hast du heute Nachmittag schon etwas?"],["هل عندك وقت؟","Hast du Zeit?"],["غدًا يناسبني.","Morgen passt gut."],["متى يناسبك؟","Wann passt es dir?"],["عندي رغبة في المسرح.","Ich habe Lust auf Theater."],["موافق.","Einverstanden."]]},
+ k5_tel:{t:"مكالمة هاتفية",i:[["ماذا يمكنني أن أفعل لك؟","Was kann ich für Sie tun?"],["اسمي علي.","Mein Name ist Ali."],["في الصباح لا أستطيع للأسف، لأنني أعمل.","Vormittags kann ich leider nicht, denn ich arbeite."],["سأسجّلك يوم الخميس الساعة 18.","Dann trage ich Sie am Donnerstag um 18 Uhr ein."],["شكرًا جزيلًا على مساعدتك!","Vielen Dank für Ihre Hilfe!"],["مع السلامة!","Auf Wiedersehen!"]]},
+ k5_spaet:{t:"الاعتذار عن التأخير والرد عليه",i:[["عفوًا.","Entschuldigung, bitte."],["أرجو المعذرة. (رسمي)","Bitte entschuldigen Sie."],["أعتذر.","Ich bitte um Entschuldigung."],["آسف، تأخرت.","Es tut mir leid, ich bin zu spät."],["لا بأس.","Schon gut."],["لا مشكلة.","Kein Problem."],["ليس مهمًا.","Macht nichts."],["المرة القادمة في الموعد من فضلك!","Das nächste Mal bitte pünktlich!"]]},
+
+ k6_einl:{t:"كتابة دعوة",i:[["مرحبًا … / عزيزي … / عزيزتي …","Hallo …, / Lieber …, / Liebe …,"],["سنقيم احتفالًا / حفلة.","wir machen ein Fest / eine Party."],["ندعوك / ندعوكم بحرارة.","Wir laden dich / euch herzlich ein."],["الحفلة يوم … في …","Die Party ist am … in …"],["نبدأ الساعة …","Wir fangen um … an."],["هل يمكنك / يمكنكم إحضار …؟","Kannst du / Könnt ihr … mitbringen?"],["أتمنّى أن يكون عندك / عندكم وقت!","Hoffentlich hast du / habt ihr Zeit!"],["مع أطيب التحيات","Liebe Grüße / Viele Grüße / Herzliche Grüße"]]},
+ k6_kellner:{t:"النادل يقول",i:[["ماذا تريد أن تشرب / تطلب؟","Was möchten Sie trinken / bestellen?"],["وأنت؟","Und für Sie?"],["هل تريد أن تأكل شيئًا أيضًا؟","Möchten / Wollen Sie auch etwas essen?"],["لحظة من فضلك. / نعم، بكل سرور.","Einen Moment, bitte. / Ja, gern."],["معًا أم كل واحد لوحده؟","Zusammen oder getrennt?"],["المجموع … يورو.","Das macht (zusammen) … Euro."]]},
+ k6_gast:{t:"الزبون يقول",i:[["لي ماء / كولا من فضلك.","Für mich bitte ein Wasser / eine Cola."],["أودّ عصير تفاح.","Ich hätte gern einen Apfelsaft."],["نعم، سآخذ سلطة من فضلك.","Ja. Ich möchte / nehme einen Salat, bitte."],["لي شوربة من فضلك.","Für mich bitte eine Suppe."],["عفوًا، هل يمكننا الدفع؟","Entschuldigung, kann ich / können wir bitte zahlen?"],["معًا، من فضلك!","Zusammen, bitte!"],["اجعلها 25 يورو. احتفظ بالباقي.","Machen Sie bitte 25 Euro. Stimmt so."]]},
+ k6_ereignis:{t:"الكلام عن حدث مضى",i:[["كيف كان …؟","Wie war …?"],["هل المطعم غالٍ / جيد؟","Ist das Restaurant teuer / gut?"],["هل استمتعتم؟","Hattet ihr (keinen) Spaß?"],["كان رائعًا / جميلًا / ليس جيدًا.","Es war super / schön / nicht so gut."],["الأكل كان مقبولًا / لذيذًا.","Das Essen war okay / lecker."],["النادل كان (غير) لطيف.","Der Kellner war (nicht so) nett."],["استمتعنا كثيرًا / لم نستمتع.","Wir hatten viel / keinen Spaß."]]},
+ k6_geb:{t:"أسئلة عن عيد الميلاد",i:[["من تدعو؟","Wen lädst du ein?"],["متى يبدأ الاحتفال؟","Wann fängt das Fest an?"],["متى ينتهي؟","Wann hört es auf?"],["ماذا تتمنّى (كهدية)؟","Was wünschst du dir?"],["هل يُحضر الضيوف شيئًا معهم؟","Bringen die Gäste etwas mit?"],["ماذا تشتري؟","Was kaufst du ein?"],["من يتصل بك؟","Wer ruft dich an?"],["كيف تحضّر للاحتفال؟","Wie bereitest du das Fest vor?"],["عيد ميلادي في 15 مايو.","Am fünfzehnten Mai habe ich Geburtstag."],["أفتح الهدايا.","Ich mache die Geschenke auf."]]}
+};
+
+// dialogues: [speaker, german, arabic]
+const D = {
+ k4_d1:[["Verkäufer","Was möchten Sie?","ماذا تريد؟"],["Kunde","Ich möchte bitte ein Kilo Äpfel.","أريد كيلو تفاح من فضلك."],["Verkäufer","Gerne. Sonst noch etwas?","بكل سرور. شيء آخر؟"],["Kunde","Ja, haben Sie frische Tomaten?","نعم، هل عندكم طماطم طازجة؟"],["Verkäufer","Ja, die finden Sie dort links.","نعم، تجدها هناك على اليسار."],["Kunde","Danke. Was kosten die Tomaten?","شكرًا. كم سعر الطماطم؟"],["Verkäufer","Sie kosten 2 Euro pro Kilo.","سعرها 2 يورو للكيلو."],["Kunde","Gut, dann nehme ich noch ein Kilo Tomaten.","جيد، إذن آخذ أيضًا كيلو طماطم."],["Verkäufer","Ist das alles?","هل هذا كل شيء؟"],["Kunde","Ja, danke. Können Sie wechseln?","نعم، شكرًا. هل يمكنك أن تفكّ لي؟"],["Verkäufer","Ja, Moment, hier bitte.","نعم، لحظة، تفضّل."],["Kunde","Dankeschön!","شكرًا جزيلًا!"]],
+ k4_d2:[["A","Was isst du gern zum Frühstück?","ماذا تحب أن تأكل في الفطور؟"],["B","Zum Frühstück esse ich gern Brötchen mit Käse und trinke Kaffee. Und du?","في الفطور أحب أكل العيش الفينو بالجبن وأشرب قهوة. وأنت؟"],["A","Ich esse gern Müsli und trinke Tee.","أحب أكل الموسلي وأشرب شايًا."],["B","Magst du auch Obst?","هل تحب الفاكهة أيضًا؟"],["A","Ja, sehr gern. Besonders Äpfel und Bananen.","نعم، جدًا. خاصة التفاح والموز."],["B","Trinkst du gern etwas zum Frühstück?","هل تحب أن تشرب شيئًا في الفطور؟"],["A","Ja, natürlich. Ich trinke gern Kaffee mit Milch. Und du?","نعم، طبعًا. أحب القهوة بالحليب. وأنت؟"],["B","Ich trinke lieber Tee mit Milch.","أفضّل الشاي بالحليب."]],
+ k5_d1:[["A","Hallo! Hast du heute Nachmittag schon etwas?","مرحبًا! هل عندك شيء بعد ظهر اليوم؟"],["B","Ja, leider. Ich muss zum Arzt gehen.","نعم، للأسف. يجب أن أذهب إلى الطبيب."],["A","Oh schade, dann vielleicht morgen? Hast du Zeit?","يا خسارة، إذن ربما غدًا؟ عندك وقت؟"],["B","Morgen passt gut. Ich muss nur am Vormittag lernen, aber am Nachmittag habe ich frei.","غدًا يناسب. يجب فقط أن أذاكر في الصباح، لكن بعد الظهر أنا فاضٍ."],["A","Super, dann lass uns etwas unternehmen. Wir können ins Café gehen.","رائع، إذن لنفعل شيئًا. يمكننا الذهاب إلى المقهى."],["B","Gute Idee! Aber ich habe auch Lust auf Theater.","فكرة جيدة! لكن عندي رغبة في المسرح أيضًا."],["A","Theater klingt toll! Wann passt es dir? Vielleicht um 17 Uhr?","المسرح فكرة رائعة! متى يناسبك؟ ربما الساعة 17؟"],["B","17 Uhr ist perfekt. Danach können wir noch ins Café gehen.","17 ممتاز. بعدها يمكننا الذهاب إلى المقهى."],["A","Klasse! Dann machen wir das so.","رائع! إذن نفعل ذلك."],["B","Einverstanden. Bis morgen um 17 Uhr!","موافق. إلى الغد الساعة 17!"]],
+ k5_d2:[["Schule","Guten Tag, hier ist die Sprachschule Sonnenschein. Was kann ich für Sie tun?","مرحبًا، هنا مدرسة اللغة زونينشاين. ماذا يمكنني أن أفعل لك؟"],["Ali","Guten Tag, mein Name ist Ali. Ich hätte gern einen Termin für einen Sprachkurs. Haben Sie nächste Woche einen Termin frei?","مرحبًا، اسمي علي. أودّ موعدًا لكورس لغة. هل عندكم موعد متاح الأسبوع القادم؟"],["Schule","Unser Büro ist von 9 bis 12 Uhr geöffnet. Außerdem haben wir donnerstags auch von 17 bis 20 Uhr offen.","مكتبنا مفتوح من 9 إلى 12. وأيضًا نفتح أيام الخميس من 17 إلى 20."],["Ali","Vormittags kann ich leider nicht, denn ich arbeite immer von 9 bis 16 Uhr.","في الصباح لا أستطيع للأسف، لأنني أعمل دائمًا من 9 إلى 16."],["Schule","Verstehe. Können Sie vielleicht am Donnerstagabend kommen, zum Beispiel um 18 Uhr?","فهمت. هل يمكنك المجيء مساء الخميس مثلًا الساعة 18؟"],["Ali","Ja, das geht sehr gut. Donnerstag um 18 Uhr passt perfekt.","نعم، هذا يناسب جدًا. الخميس الساعة 18 ممتاز."],["Schule","Super, dann trage ich Sie am Donnerstag um 18 Uhr ein.","رائع، إذن أسجّلك يوم الخميس الساعة 18."],["Ali","Vielen Dank für Ihre Hilfe!","شكرًا جزيلًا على مساعدتك!"]],
+ k6_d1:[["Kellner","Guten Abend. Was möchten Sie trinken?","مساء الخير. ماذا تريدون أن تشربوا؟"],["Gast A","Für mich bitte ein Wasser.","لي ماء من فضلك."],["Kellner","Und für Sie?","وأنت؟"],["Gast B","Ich hätte gern einen Apfelsaft.","أودّ عصير تفاح."],["Kellner","Möchten Sie auch etwas essen?","هل تريدون أن تأكلوا شيئًا أيضًا؟"],["Gast A","Ja, ich nehme einen Salat, bitte.","نعم، سآخذ سلطة من فضلك."],["Gast B","Für mich bitte eine Suppe.","لي شوربة من فضلك."],["Gast B","Entschuldigung, können wir bitte zahlen?","عفوًا، هل يمكننا الدفع؟"],["Kellner","Zusammen oder getrennt?","معًا أم كل واحد لوحده؟"],["Gast A","Zusammen, bitte.","معًا من فضلك."],["Kellner","Das macht zusammen 24,30 Euro.","المجموع 24,30 يورو."],["Gast B","Machen Sie bitte 25 Euro. Stimmt so.","اجعلها 25 يورو. احتفظ بالباقي."],["Kellner","Vielen Dank und einen schönen Abend noch!","شكرًا جزيلًا، أمسية سعيدة!"]],
+ k6_d2:[["A","Letzte Woche war ich mit meiner Freundin in einem Café.","الأسبوع الماضي كنت مع صديقتي في مقهى."],["B","Echt? Wie war es denn?","حقًا؟ كيف كان؟"],["A","Das Café war ziemlich schön und sehr gemütlich. Aber die Getränke waren leider ein bisschen teuer.","المقهى كان جميلًا ومريحًا جدًا. لكن المشروبات كانت للأسف غالية قليلًا."],["B","Hattet ihr Hunger oder eher Durst?","هل كنتم جائعين أم عطشانين أكثر؟"],["A","Wir hatten großen Hunger und auch ein bisschen Durst.","كنا جائعين جدًا وعطشانين قليلًا."],["B","Und wie war das Essen?","وكيف كان الأكل؟"],["A","Das Essen war lecker, aber die Suppe war kalt.","الأكل كان لذيذًا، لكن الشوربة كانت باردة."],["B","Hattet ihr Spaß?","هل استمتعتم؟"],["A","Ja, wir hatten viel Spaß.","نعم، استمتعنا كثيرًا."]]
+};
+
+const PERS = ["ich","du","er / es / sie","wir","ihr","sie / Sie"];
+const CONJ = {
+ "möchten":["möchte","möchtest","möchte","möchten","möchtet","möchten"],
+ "wollen":["will","willst","will","wollen","wollt","wollen"],
+ "können":["kann","kannst","kann","können","könnt","können"],
+ "müssen":["muss","musst","muss","müssen","müsst","müssen"],
+ "dürfen":["darf","darfst","darf","dürfen","dürft","dürfen"],
+ "sollen":["soll","sollst","soll","sollen","sollt","sollen"],
+ "mögen":["mag","magst","mag","mögen","mögt","mögen"],
+ "sein (Prät.)":["war","warst","war","waren","wart","waren"],
+ "haben (Prät.)":["hatte","hattest","hatte","hatten","hattet","hatten"]
+};
+const CONJ_CH = {"möchten":4,"wollen":4,"können":4,"mögen":4,"müssen":5,"dürfen":5,"sollen":5,"sein (Prät.)":6,"haben (Prät.)":6};
+
+// separable: [infinitive, arabic, ich, du, er, prefix]
+const TRENN = [
+ ["anrufen","يتصل (هاتفيًا)","rufe","rufst","ruft","an"],
+ ["einkaufen","يتسوّق","kaufe","kaufst","kauft","ein"],
+ ["ansehen","يشاهد","sehe","siehst","sieht","an"],
+ ["fernsehen","يشاهد التلفاز","sehe","siehst","sieht","fern"],
+ ["aussehen","يبدو","sehe","siehst","sieht","aus"],
+ ["aufwachen","يستيقظ","wache","wachst","wacht","auf"],
+ ["aufstehen","ينهض من السرير","stehe","stehst","steht","auf"],
+ ["anfangen","يبدأ","fange","fängst","fängt","an"],
+ ["aufhören","يتوقّف / ينتهي","höre","hörst","hört","auf"],
+ ["zuhören","يستمع","höre","hörst","hört","zu"],
+ ["ankommen","يصل","komme","kommst","kommt","an"],
+ ["zurückkommen","يعود","komme","kommst","kommt","zurück"],
+ ["einladen","يدعو","lade","lädst","lädt","ein"],
+ ["mitbringen","يُحضر معه","bringe","bringst","bringt","mit"],
+ ["beibringen","يُعلّم (شخصًا)","bringe","bringst","bringt","bei"],
+ ["abholen","يصطحب / يستلم","hole","holst","holt","ab"],
+ ["vorbereiten","يحضّر / يجهّز","bereite","bereitest","bereitet","vor"],
+ ["aufräumen","يرتّب","räume","räumst","räumt","auf"],
+ ["aufmachen","يفتح","mache","machst","macht","auf"],
+ ["zumachen","يغلق","mache","machst","macht","zu"],
+ ["anmachen","يشغّل","mache","machst","macht","an"],
+ ["ausmachen","يطفئ","mache","machst","macht","aus"],
+ ["mitmachen","يشارك","mache","machst","macht","mit"],
+ ["aufpassen","ينتبه","passe","passt","passt","auf"],
+ ["einsteigen","يركب (مواصلة)","steige","steigst","steigt","ein"],
+ ["aussteigen","ينزل (من مواصلة)","steige","steigst","steigt","aus"],
+ ["umsteigen","يغيّر المواصلة","steige","steigst","steigt","um"],
+ ["abfahren","يغادر / ينطلق","fahre","fährst","fährt","ab"],
+ ["einfahren","يدخل المحطة (القطار)","fahre","fährst","fährt","ein"],
+ ["zurückbleiben","يبقى في الخلف","bleibe","bleibst","bleibt","zurück"],
+ ["anziehen","يرتدي","ziehe","ziehst","zieht","an"],
+ ["ausziehen","يخلع / يترك السكن","ziehe","ziehst","zieht","aus"],
+ ["umziehen","ينتقل لسكن جديد","ziehe","ziehst","zieht","um"],
+ ["anhaben","يرتدي (الآن)","habe","hast","hat","an"]
+];
+
+const AKKV = [["machen","يفعل"],["kaufen","يشتري"],["verkaufen","يبيع"],["reparieren","يصلح"],["essen","يأكل"],["trinken","يشرب"],["hören","يسمع"],["schreiben","يكتب"],["brauchen","يحتاج"],["finden","يجد"],["nehmen","يأخذ"],["beantworten","يجيب على"],["benutzen","يستخدم"],["besuchen","يزور"],["bezahlen","يدفع"],["haben","يملك"],["kennen","يعرف"],["kochen","يطبخ"],["sehen","يرى"],["mögen","يحب"]];
+
+// grammar cards: [chapter, question, answer]
+const G = [
+ [4,"Ich habe ___ Stift. <small>(ein · der Stift)</small>","einen"],
+ [4,"Du kaufst ___ Auto. <small>(bestimmt · das Auto)</small>","das"],
+ [4,"Er braucht ___ Rechnung. <small>(ein · die Rechnung)</small>","eine"],
+ [4,"Das ist ___ Wagen. <small>(ein · der Wagen)</small>","ein <small>بعد sein ← Nominativ</small>"],
+ [4,"Petra hat ___ Kater. <small>(ein · der Kater)</small>","einen"],
+ [4,"Ich brauche ___ Wecker. <small>(der)</small>","den"],
+ [4,"Ich brauche ___ Waschzeug. <small>(das)</small>","das"],
+ [4,"Ich brauche ___ Schuhe. <small>(Pl., bestimmt)</small>","die"],
+ [4,"Walter kauft ___ Salat. <small>(ein)</small>","einen"],
+ [4,"Walter kauft ___ Tomaten. <small>(Pl., unbestimmt)</small>","بدون أداة: Tomaten"],
+ [4,"Er hat ___ Tisch. <small>(✗ · der Tisch)</small>","keinen Tisch"],
+ [4,"Er hat ___ Waschmaschine. <small>(✗)</small>","keine Waschmaschine"],
+ [4,"Er hat ___ Haus. <small>(✗)</small>","kein Haus"],
+ [4,"Thomas hat ___ Fernseher. <small>(✓)</small>","einen Fernseher"],
+ [4,"D___ Mensch isst d___ Fisch.","Der Mensch isst den Fisch."],
+ [4,"D___ Hühner essen d___ Körner.","Die Hühner essen die Körner."],
+ [4,"___ Hund liebe ich. <small>(der Hund)</small>","Den"],
+ [4,"W___ sehen Sie oft? – Meine Kollegen.","Wen"],
+ [4,"W___ trinken Sie gern? – Champagner.","Was"],
+ [4,"W___ hat einen Brief? – Ich.","Wer"],
+ [4,"Ich esse ___ Fisch. <small>(Negation)</small>","keinen"],
+ [4,"Ich trinke ___ Milch. <small>(Negation)</small>","keine"],
+ [4,"رتّب: trinken / möchte / ich / einen Kaffee / zum Frühstück","Ich möchte zum Frühstück einen Kaffee trinken."],
+ [4,"رتّب سؤالًا: du / wohin / gehen / willst / am Wochenende","Wohin willst du am Wochenende gehen?"],
+ [4,"سؤال نعم/لا: Sie / Fleisch / kaufen / wollen","Wollen Sie Fleisch kaufen?"],
+ [4,"jeden Morgen →","morgens"],[4,"jeden Tag →","täglich"],[4,"jede Woche →","wöchentlich"],[4,"jedes Jahr →","jährlich"],[4,"jeden Samstag →","samstags"],[4,"jede Nacht →","nachts"],
+ [4,"die Schokolade + der Kuchen =","der Schokoladenkuchen"],[4,"der Fisch + die Suppe =","die Fischsuppe"],[4,"der Käse + das Brötchen =","das Käsebrötchen"],
+ [4,"ein ___ Joghurt","Becher"],[4,"eine ___ Cola","Dose"],[4,"ein ___ Petersilie","Bund"],[4,"eine ___ Eier","Schachtel"],[4,"ein ___ Marmelade","Glas"],[4,"ein ___ Brot <small>(ganz)</small>","Laib"],[4,"eine ___ Käse <small>(dünn)</small>","Scheibe"],[4,"eine ___ Nudeln","Packung"],
+ [4,"Die Milch kostet 2,25 Euro. → ___ kostet 2,25 Euro.","Sie"],[4,"Das Brot kostet 99 Cent. → ___ kostet 99 Cent.","Es"],
+ [4,"25,17 € بالكلمات","fünfundzwanzig Euro siebzehn"],[4,"89,00 € بالكلمات","neunundachtzig Euro"],
+ [4,"Ich kaufe das Brot ___ Bäckerei.","in der"],[4,"Ich kaufe Obst ___ Markt.","auf dem"],[4,"Ich kaufe Käse ___ Supermarkt.","im"],[4,"___ Metzger hole ich Schinken.","Beim"],
+ [5,"___ Montag","am"],[5,"___ drei Uhr","um"],[5,"___ der Nacht","in"],[5,"___ Wochenende","am"],[5,"___ halb sechs","um"],[5,"___ sieben ___ elf Uhr","von … bis"],[5,"___ Donnerstagabend","am"],
+ [5,"ich → Possessiv","mein"],[5,"du → Possessiv","dein"],[5,"er / es → Possessiv","sein"],[5,"sie (Sg.) → Possessiv","ihr"],[5,"wir → Possessiv","unser"],[5,"ihr → Possessiv","euer"],[5,"Sie → Possessiv","Ihr"],
+ [5,"Wir treffen ___ Freund. <small>(unser)</small>","unseren"],[5,"Bringt ihr ___ Bücher? <small>(euer)</small>","eure"],[5,"Peter und ___ Freundin machen eine Party.","seine"],[5,"Sara und ___ Freundinnen … <small>(sie)</small>","ihre"],[5,"Verkaufen Sie ___ Auto?","Ihr"],[5,"Ich rufe ___ Vater an. <small>(mein)</small>","meinen"],
+ [5,"إذن (مسموح) → Modalverb?","dürfen"],[5,"ضرورة (لازم) → Modalverb?","müssen"],[5,"منع (ممنوع) → ?","nicht dürfen"],[5,"طلب من شخص آخر → Modalverb?","sollen"],[5,"نيّة / إرادة → Modalverb?","wollen"],[5,"رغبة مهذّبة → Modalverb?","möchten"],[5,"قدرة → Modalverb?","können"],
+ [5,"Man ___ im Krankenhaus nicht rauchen.","darf"],[5,"Ich ___ morgen um Viertel nach sieben aufstehen. <small>(Notwendigkeit)</small>","muss"],[5,"Du ___ um Viertel vor neun in der Schule sein. <small>(Aufforderung)</small>","sollst"],
+ [5,"تحية إيميل لـ Paul","Lieber Paul,"],[5,"تحية إيميل لـ Anna","Liebe Anna,"],[5,"طلب موعد بأكثر صيغة مهذّبة","Ich hätte gern einen Termin."],
+ [6,"1.","erste"],[6,"3.","dritte"],[6,"7.","siebte"],[6,"8.","achte"],[6,"11.","elfte"],[6,"20.","zwanzigste"],[6,"21.","einundzwanzigste"],[6,"31.","einunddreißigste"],
+ [6,"Heute ist der ___ März. <small>(8.)</small>","achte"],[6,"Mein Geburtstag ist ___ Juli. <small>(am 1.)</small>","am ersten"],[6,"Ich bleibe in Kairo ___ September. <small>(16.–20.)</small>","vom sechzehnten bis zum zwanzigsten"],[6,"Wir machen eine Party ___ Mai. <small>(am 27.)</small>","am siebenundzwanzigsten"],
+ [6,"رتّب: ich / ansehen / einen Film","Ich sehe einen Film an."],[6,"رتّب: wann / aufwachen / du / morgen","Wann wachst du morgen auf?"],[6,"نعم/لا: ankommen / du / heute um 9 Uhr","Kommst du heute um 9 Uhr an?"],[6,"مع فعل ناقص: ich / möchte / einen Film / ansehen","Ich möchte einen Film ansehen."],[6,"رتّب: wann / kannst / du / mich / anrufen","Wann kannst du mich anrufen?"],
+ [6,"ich → Akkusativ","mich"],[6,"du → Akkusativ","dich"],[6,"er → Akkusativ","ihn"],[6,"wir → Akkusativ","uns"],[6,"ihr → Akkusativ","euch"],
+ [6,"Ich lade ___ ein. <small>(der Freund)</small>","ihn"],[6,"Ich lese ___. <small>(die E-Mail)</small>","sie"],[6,"Ich verkaufe ___. <small>(das Auto)</small>","es"],
+ [6,"ما حروف الجر الستة مع الأكوزاتيف؟","für, ohne, gegen, durch, um, bis"],
+ [6,"Ich habe ein Geschenk für ___. <small>(du)</small>","dich"],[6,"Ohne ___ geht ihr nicht ins Kino. <small>(ich)</small>","mich"],[6,"Der Hund läuft um ___ Baum herum.","den"],[6,"Ist das Paket für ___? <small>(wir)</small>","uns"],[6,"Er fährt durch ___ Tunnel.","den"],[6,"Ich habe heute keine Zeit für ___. <small>(sie, Pl.)</small>","sie"],[6,"Er spielt gegen ___ Tennis. <small>(ich)</small>","mich"],[6,"Ohne ___ macht das keinen Spaß. <small>(ihr)</small>","euch"],
+ [6,"___ lädt dich ein?","Wer"],[6,"___ lädst du ein?","Wen"],[6,"Für ___ hast du Zeit?","wen"],
+ [6,"Wie ___ das Essen? <small>(sein, Prät.)</small>","war"],[6,"Wir ___ viel Spaß. <small>(haben, Prät.)</small>","hatten"],[6,"___ ihr Hunger? <small>(haben, Prät.)</small>","Hattet"],[6,"Die Getränke ___ teuer. <small>(sein, Prät.)</small>","waren"],
+ [6,"رتّب: dann / ich / aufräumen / mein Zimmer","Dann räume ich mein Zimmer auf."],[6,"رتّب: zuerst / ich / nehmen / ein Bad","Zuerst nehme ich ein Bad."],
+ [6,"رتّب من الأكثر للأقل: oft, nie, immer, manchmal, selten, meistens","immer, meistens, oft, manchmal, selten, nie"]
+];
+
+/* ---------- RENDER ---------- */
+const ART = {m:"der",n:"das",f:"die",p:"die"};
+const esc = s => s;
+function wordHTML(g,w){ return (g?`<span class="art">${ART[g]}</span> `:"")+`<span class="noun">${w}</span>`; }
+
+document.querySelectorAll("[data-v]").forEach(el=>{
+  const grp=V[el.dataset.v]; el.className="vgroup";
+  el.innerHTML=`<h4>${grp.t}</h4><ul class="vlist">`+grp.i.map(([g,w,ar,nt])=>
+    `<li class="w g-${g||"x"}"><span class="gde" lang="de">${g?`<span class="art a">${ART[g]}</span> `:""}<span class="noun">${w}</span>${g==="p"?" <small class=\"nt\">(Pl.)</small>":""}${nt?` <small class="nt${g?"":" a"}">${nt}</small>`:""}</span><span class="mean a">${ar}</span></li>`).join("")+`</ul>`;
+});
+document.querySelectorAll("[data-ph]").forEach(el=>{
+  const grp=P[el.dataset.ph];
+  el.innerHTML=`<h3 class="phead">${grp.t}</h3><ul class="plist">`+grp.i.map(([ar,de])=>
+    `<li><p class="p-ar">${ar}</p><p class="p-de" lang="de"><span class="a">${de}</span></p></li>`).join("")+`</ul>`;
+});
+document.querySelectorAll("[data-dlg]").forEach(el=>{
+  el.innerHTML=D[el.dataset.dlg].map(([who,de,ar])=>
+    `<li><span class="who de">${who}</span><div><span class="de" lang="de"><span class="a">${de}</span></span><span class="tr">${ar}</span></div></li>`).join("");
+});
+document.querySelectorAll("[data-conj]").forEach(el=>{
+  const verbs=el.dataset.conj.split(",");
+  el.innerHTML=`<table class="tbl" dir="ltr"><tr><th></th>${verbs.map(v=>`<th>${v}</th>`).join("")}</tr>`+
+    PERS.map((p,i)=>`<tr><td>${p}</td>${verbs.map(v=>`<td><span class="a">${CONJ[v][i]}</span></td>`).join("")}</tr>`).join("")+`</table>`;
+});
+document.querySelector("[data-trenn]").innerHTML=TRENN.map(([inf,ar,ich,du,er,pre])=>
+  `<li><p class="p-de" lang="de">${inf} <span class="p-ar" style="font-family:var(--f-ar);font-size:14px;color:var(--muted)" dir="rtl">· <span class="a">${ar}</span></span></p><p class="p-de" lang="de" style="font-size:16px;color:var(--muted)">ich <span class="a">${ich} … ${pre}</span> · du <span class="a">${du} … ${pre}</span> · er <span class="a">${er} … ${pre}</span></p></li>`).join("");
+document.querySelector("[data-akkverbs]").innerHTML=AKKV.map(([de,ar])=>`<span class="vchip"><span class="de">${de}</span><span class="a">${ar}</span></span>`).join("");
+
+// jump chips
+document.querySelectorAll("section.chap").forEach(sec=>{
+  const nav=sec.querySelector(".jump"); if(!nav) return;
+  nav.innerHTML=[...sec.querySelectorAll("[data-jump]")].map(e=>`<a href="#${e.id}" dir="auto" data-go="${e.id}">${e.dataset.jump}</a>`).join("");
+});
+document.addEventListener("click",e=>{
+  const go=e.target.closest("[data-go]"); if(!go) return;
+  e.preventDefault(); document.getElementById(go.dataset.go).scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+/* ---------- TABS ---------- */
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const tabs=[...document.querySelectorAll(".tab")];
+function show(id){
+  document.querySelectorAll("section.chap").forEach(s=>s.hidden=s.id!==id);
+  tabs.forEach(t=>t.setAttribute("aria-selected",t.dataset.t===id));
+  document.getElementById("rc").style.visibility = id==="quiz"?"hidden":"visible";
+  store.set("tab",id);
+  try{history.replaceState(null,"","#"+id)}catch(e){}
+}
+tabs.forEach(t=>t.addEventListener("click",()=>{show(t.dataset.t);window.scrollTo({top:0})}));
+const h=(location.hash||"").slice(1);
+show(["k4","k5","k6","quiz"].includes(h)?h:(["k4","k5","k6","quiz"].includes(store.get("tab"))?store.get("tab"):"k4"));
+
+/* ---------- RECALL MODE ---------- */
+const sw=document.getElementById("recall"), rehide=document.getElementById("rehide");
+function setRecall(on){
+  document.body.classList.toggle("recall",on);
+  sw.setAttribute("aria-checked",on); rehide.hidden=!on;
+  document.querySelectorAll("main .a").forEach(a=>{
+    a.classList.remove("shown");
+    if(on){a.tabIndex=0;a.setAttribute("role","button")}else{a.removeAttribute("tabindex");a.removeAttribute("role")}
+  });
+  store.set("recall",on?"1":"0");
+}
+sw.addEventListener("click",()=>setRecall(!document.body.classList.contains("recall")));
+rehide.addEventListener("click",()=>document.querySelectorAll("section.chap:not([hidden]) .a.shown").forEach(a=>a.classList.remove("shown")));
+document.addEventListener("click",e=>{
+  if(!document.body.classList.contains("recall")) return;
+  const a=e.target.closest("main .a"); if(a) a.classList.add("shown");
+});
+document.addEventListener("keydown",e=>{
+  if(!document.body.classList.contains("recall")) return;
+  if((e.key==="Enter"||e.key===" ")&&e.target.classList&&e.target.classList.contains("a")){e.preventDefault();e.target.classList.add("shown")}
+});
+setRecall(store.get("recall")==="1");
+
+/* ---------- QUIZ ---------- */
+const CATS={art:"der / das / die",vok:"الكلمات",konj:"التصريف",gram:"القواعد",red:"العبارات"};
+const cards=[];
+for(const [key,grp] of Object.entries(V)){
+  const ch=+key[1];
+  grp.i.forEach(([g,w,ar])=>{
+    if(g && g!=="p") cards.push({ch,cat:"art",q:`<span class="de">___ ${w}</span><small>der، das أم die؟ وما المعنى؟</small>`,a:`<span class="de ans g-${g}"><span class="art">${ART[g]}</span> <span class="noun">${w}</span></span><small>${ar}</small>`});
+    cards.push({ch,cat:"vok",q:`${ar}<small>بالألمانية${g?" مع الأداة":""}</small>`,a:`<span class="de ans">${g?ART[g]+" ":""}${w}${g==="p"?" (Pl.)":""}</span>`});
+  });
+}
+for(const [key,grp] of Object.entries(P)){
+  const ch=+key[1];
+  grp.i.forEach(([ar,de])=>cards.push({ch,cat:"red",q:`${ar}<small>قلها بالألمانية</small>`,a:`<span class="de ans">${de}</span>`}));
+}
+for(const [v,forms] of Object.entries(CONJ)){
+  forms.forEach((f,i)=>{ if(i===5) return; cards.push({ch:CONJ_CH[v],cat:"konj",q:`<span class="de">${v} · ${PERS[i]}</span>`,a:`<span class="de ans">${PERS[i].split(" /")[0]} ${f}</span>`}); });
+}
+TRENN.forEach(([inf,ar,ich,du,er,pre])=>{
+  cards.push({ch:6,cat:"konj",q:`<span class="de">${inf} · du</span><small>${ar}</small>`,a:`<span class="de ans">du ${du} … ${pre}</span>`});
+  cards.push({ch:6,cat:"konj",q:`<span class="de">${inf} · er</span><small>${ar}</small>`,a:`<span class="de ans">er ${er} … ${pre}</span>`});
+  cards.push({ch:6,cat:"vok",q:`${ar}<small>الفعل المنفصل بالألمانية</small>`,a:`<span class="de ans">${inf}</span>`});
+});
+AKKV.forEach(([de,ar])=>cards.push({ch:4,cat:"vok",q:`${ar}<small>بالألمانية</small>`,a:`<span class="de ans">${de}</span>`}));
+G.forEach(([ch,q,a])=>{
+  const isAr=/[؀-ۿ]/.test(q.replace(/<small>.*?<\/small>/g,""));
+  cards.push({ch,cat:"gram",q:isAr?q:`<span class="de">${q}</span>`,a:`<span class="${/[؀-ۿ]/.test(a.replace(/<small>.*?<\/small>/g,""))?"":"de "}ans">${a}</span>`});
+});
+
+const selCh=new Set([4,5,6]), selCat=new Set(Object.keys(CATS));
+let queue=[], yes=0, no=0, revealed=false;
+const $=id=>document.getElementById(id);
+function chip(label,on,fn){const b=document.createElement("button");b.textContent=label;b.setAttribute("aria-pressed",on);b.onclick=()=>{const v=b.getAttribute("aria-pressed")!=="true";b.setAttribute("aria-pressed",v);fn(v);};return b;}
+[4,5,6].forEach(c=>$("qfCh").appendChild(chip("Kapitel "+c,true,v=>{v?selCh.add(c):selCh.delete(c);build();})));
+Object.entries(CATS).forEach(([k,l])=>$("qfCat").appendChild(chip(l,true,v=>{v?selCat.add(k):selCat.delete(k);build();})));
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function build(){queue=shuffle(cards.filter(c=>selCh.has(c.ch)&&selCat.has(c.cat)));yes=0;no=0;render();}
+function render(){
+  $("sLeft").textContent=queue.length;$("sYes").textContent=yes;$("sNo").textContent=no;
+  revealed=false;$("qa").hidden=true;$("bReveal").hidden=false;$("bNo").hidden=true;$("bYes").hidden=true;
+  const c=queue[0];
+  if(!c){$("qmeta").textContent="";$("qq").innerHTML=`<div class="qdone">${yes||no?"انتهت البطاقات. أحسنت!":"اختر فصلًا ونوعًا واحدًا على الأقل."}<small>اضغط «ابدأ من جديد» لجولة جديدة.</small></div>`;$("bReveal").hidden=true;return;}
+  $("qmeta").textContent=`Kapitel ${c.ch} · ${CATS[c.cat]}`;
+  $("qq").innerHTML=c.q;$("qa").innerHTML=c.a;
+}
+function reveal(){if(!queue.length||revealed)return;revealed=true;$("qa").hidden=false;$("bReveal").hidden=true;$("bNo").hidden=false;$("bYes").hidden=false;$("bYes").focus({preventScroll:true});}
+function answer(ok){if(!revealed)return;const c=queue.shift();if(ok){yes++}else{no++;queue.splice(Math.min(4,queue.length),0,c)}render();}
+$("bReveal").onclick=reveal;$("qcard").onclick=reveal;
+$("bYes").onclick=()=>answer(true);$("bNo").onclick=()=>answer(false);$("bRestart").onclick=build;
+document.addEventListener("keydown",e=>{
+  if($("quiz").hidden) return;
+  if(e.target.tagName==="BUTTON" && (e.key===" "||e.key==="Enter")) return;
+  if(e.key===" "||e.key==="Enter"){e.preventDefault();reveal()}
+  else if(e.key==="1") answer(false); else if(e.key==="2") answer(true);
+});
+build();
+</script>
+
+</body></html>
